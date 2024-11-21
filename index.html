@@ -14,29 +14,20 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        .browser-mockup {
+        .preview-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 8px 8px 0 0;
-            position: relative;
-            background: #f6f9fc;
         }
-        .browser-dots {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            display: flex;
-            gap: 6px;
-        }
-        .browser-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        .browser-dot-red { background-color: #ff5f57; }
-        .browser-dot-yellow { background-color: #ffbd2e; }
-        .browser-dot-green { background-color: #28c940; }
-        .preview-content {
+        .preview-fallback {
+            height: 200px;
             background: linear-gradient(45deg, #f6f9fc 25%, #edf2f7 25%, #edf2f7 50%, #f6f9fc 50%, #f6f9fc 75%, #edf2f7 75%, #edf2f7 100%);
             background-size: 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px 8px 0 0;
         }
     </style>
 </head>
@@ -71,7 +62,7 @@
                 <a href="https://github.com/rodbastos" class="text-gray-400 hover:text-white">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:rodrigo@targetteal.com" class="text-gray-400 hover:text-white">
+                <a href="mailto:seu-email@exemplo.com" class="text-gray-400 hover:text-white">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -79,6 +70,31 @@
     </footer>
 
     <script>
+        async function checkImageExists(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                return response.ok;
+            } catch (error) {
+                return false;
+            }
+        }
+
+        async function getScreenshotUrl(htmlFile) {
+            // Primeiro, tenta encontrar uma imagem local com o mesmo nome
+            const imgName = htmlFile.name.replace('.html', '.png');
+            const localImgUrl = `./screenshots/${imgName}`;
+            
+            if (await checkImageExists(localImgUrl)) {
+                return localImgUrl;
+            }
+
+            // Se não encontrar localmente, usa um serviço de screenshot
+            // Aqui estamos usando uma URL de placeholder como exemplo
+            // Você pode substituir por um serviço real de screenshots
+            const fallbackUrl = `https://mini.s-shot.ru/1024x768/PNG/1024/Z100/?${window.location.origin}/${htmlFile.path}`;
+            return fallbackUrl;
+        }
+
         async function fetchRepoContents() {
             try {
                 const response = await fetch('https://api.github.com/repos/rodbastos/rodbastos.github.io/contents');
@@ -104,10 +120,10 @@
 
                 loadingElement.style.display = 'none';
 
-                htmlFiles.forEach(file => {
-                    const card = createProjectCard(file);
+                for (const file of htmlFiles) {
+                    const card = await createProjectCard(file);
                     projectsContainer.appendChild(card);
-                });
+                }
             } catch (error) {
                 console.error('Erro ao carregar projetos:', error);
                 document.getElementById('loading').innerHTML = `
@@ -121,26 +137,42 @@
             }
         }
 
-        function createProjectCard(file) {
+        async function createProjectCard(file) {
             const card = document.createElement('div');
             card.className = 'bg-white rounded-lg overflow-hidden shadow-lg thumbnail';
             
-            // Browser mockup com preview estilizado
-            const browserMockup = document.createElement('div');
-            browserMockup.className = 'browser-mockup p-4 pb-0';
-            browserMockup.innerHTML = `
-                <div class="browser-dots">
-                    <div class="browser-dot browser-dot-red"></div>
-                    <div class="browser-dot browser-dot-yellow"></div>
-                    <div class="browser-dot browser-dot-green"></div>
-                </div>
-                <div class="preview-content h-48 mt-4 rounded-t-lg flex items-center justify-center">
-                    <div class="text-center p-4">
-                        <i class="fas fa-code text-4xl text-blue-500 mb-2"></i>
-                        <h3 class="text-lg text-gray-700">${file.name.replace('.html', '')}</h3>
+            // Tenta obter a URL do screenshot
+            const screenshotUrl = await getScreenshotUrl(file);
+            
+            // Preview container
+            const previewContainer = document.createElement('div');
+            if (screenshotUrl) {
+                const img = document.createElement('img');
+                img.src = screenshotUrl;
+                img.alt = `Preview de ${file.name}`;
+                img.className = 'preview-img';
+                img.onerror = () => {
+                    // Se a imagem falhar, mostra o fallback
+                    previewContainer.innerHTML = `
+                        <div class="preview-fallback">
+                            <div class="text-center">
+                                <i class="fas fa-code text-4xl text-blue-500 mb-2"></i>
+                                <h3 class="text-lg text-gray-700">${file.name.replace('.html', '')}</h3>
+                            </div>
+                        </div>
+                    `;
+                };
+                previewContainer.appendChild(img);
+            } else {
+                previewContainer.innerHTML = `
+                    <div class="preview-fallback">
+                        <div class="text-center">
+                            <i class="fas fa-code text-4xl text-blue-500 mb-2"></i>
+                            <h3 class="text-lg text-gray-700">${file.name.replace('.html', '')}</h3>
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
+            }
 
             // Informações do projeto
             const content = document.createElement('div');
@@ -150,29 +182,16 @@
             title.className = 'text-xl font-bold text-gray-800 mb-3';
             title.textContent = file.name.replace('.html', '').split('-').join(' ');
 
-            const description = document.createElement('p');
-            description.className = 'text-gray-600 mb-4';
-            description.textContent = 'Visualize este projeto →';
-
             const link = document.createElement('a');
             link.href = file.path;
             link.className = 'inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors';
             link.innerHTML = 'Ver Projeto <i class="fas fa-external-link-alt ml-2"></i>';
 
             content.appendChild(title);
-            content.appendChild(description);
             content.appendChild(link);
 
-            card.appendChild(browserMockup);
+            card.appendChild(previewContainer);
             card.appendChild(content);
-
-            // Adiciona evento de clique no card inteiro
-            card.addEventListener('click', (e) => {
-                if (!e.target.closest('a')) {
-                    window.location.href = file.path;
-                }
-            });
-            card.style.cursor = 'pointer';
 
             return card;
         }
