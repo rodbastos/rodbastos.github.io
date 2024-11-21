@@ -40,14 +40,14 @@
                     <i class="fab fa-github text-2xl"></i>
                 </a>
             </div>
-            <p class="mt-2 text-blue-100">Portfólio de Projetos</p>
+            <p class="mt-2 text-blue-100">Portfólio de Mapas</p>
         </div>
     </nav>
 
     <main class="container mx-auto py-12 px-4">
         <div id="loading" class="text-center py-8">
             <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-            <p class="text-xl text-gray-600 mt-4">Carregando projetos...</p>
+            <p class="text-xl text-gray-600 mt-4">Carregando mapas...</p>
         </div>
 
         <div id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,7 +112,7 @@
                     loadingElement.innerHTML = `
                         <div class="text-center">
                             <i class="fas fa-folder-open text-4xl text-gray-400 mb-4"></i>
-                            <p class="text-xl text-gray-600">Nenhum projeto encontrado.</p>
+                            <p class="text-xl text-gray-600">Nenhum mapa encontrado.</p>
                         </div>
                     `;
                     return;
@@ -125,12 +125,12 @@
                     projectsContainer.appendChild(card);
                 }
             } catch (error) {
-                console.error('Erro ao carregar projetos:', error);
+                console.error('Erro ao carregar mapas:', error);
                 document.getElementById('loading').innerHTML = `
                     <div class="text-center">
                         <i class="fas fa-exclamation-triangle text-4xl text-red-500 mb-4"></i>
                         <p class="text-xl text-red-600">
-                            Erro ao carregar projetos. Por favor, tente novamente mais tarde.
+                            Erro ao carregar mapas. Por favor, tente novamente mais tarde.
                         </p>
                     </div>
                 `;
@@ -174,7 +174,7 @@
                 `;
             }
 
-            // Informações do projeto
+            // Informações do mapa
             const content = document.createElement('div');
             content.className = 'p-6';
             
@@ -185,7 +185,7 @@
             const link = document.createElement('a');
             link.href = file.path;
             link.className = 'inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors';
-            link.innerHTML = 'Ver Projeto <i class="fas fa-external-link-alt ml-2"></i>';
+            link.innerHTML = 'Ver Mapa <i class="fas fa-external-link-alt ml-2"></i>';
 
             content.appendChild(title);
             content.appendChild(link);
