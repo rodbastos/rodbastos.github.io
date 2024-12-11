@@ -80,19 +80,10 @@
         }
 
         async function getScreenshotUrl(htmlFile) {
-            // Primeiro, tenta encontrar uma imagem local com o mesmo nome
-            const imgName = htmlFile.name.replace('.html', '.png');
-            const localImgUrl = `./screenshots/${imgName}`;
-            
-            if (await checkImageExists(localImgUrl)) {
-                return localImgUrl;
-            }
+            const apiKey = 'bc16de'; // Substitua por sua chave API do Screenshot Machine
+            const screenshotServiceUrl = `https://api.screenshotmachine.com/?key=${apiKey}&url=https://rodbastos.github.io/${htmlFile.name}&dimension=1024x768`;
 
-            // Se não encontrar localmente, usa um serviço de screenshot
-            // Aqui estamos usando uma URL de placeholder como exemplo
-            // Você pode substituir por um serviço real de screenshots
-            const fallbackUrl = `https://mini.s-shot.ru/1024x768/PNG/1024/Z100/?${window.location.origin}/${htmlFile.path}`;
-            return fallbackUrl;
+            return screenshotServiceUrl;
         }
 
         async function fetchRepoContents() {
@@ -183,7 +174,8 @@
             title.textContent = file.name.replace('.html', '').split('-').join(' ');
 
             const link = document.createElement('a');
-            link.href = file.path;
+            link.href = `https://rodbastos.github.io/${file.name}`;
+            link.target = '_blank'; // Abre o link em uma nova aba
             link.className = 'inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors';
             link.innerHTML = 'Ver Mapa <i class="fas fa-external-link-alt ml-2"></i>';
 
