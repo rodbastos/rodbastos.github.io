@@ -1,0 +1,1011 @@
+
+    <html>
+    <head>
+        <title>Relatório de Análise de Clusters</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F2EFEB;
+        }
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            background-color: #F2EFEB;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .cluster-summary {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .cluster-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .cluster-content {
+            line-height: 1.6;
+            white-space: pre-wrap;
+            font-size: 1.1em;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: white;
+        }
+        details {
+            margin-bottom: 20px;
+        }
+        details summary {
+            cursor: pointer;
+        }
+        details summary:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Relatório de Análise de Clusters</h1>
+                <p>Gerado em: 13/12/2024 18:48</p>
+            </div>
+
+            <div class="section">
+                <h2>Visualização dos Clusters</h2>
+                <div>                            <div id="3da79eaa-1b0d-43df-a23f-e71968bf5c4f" class="plotly-graph-div" style="height:800px; width:1280px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3da79eaa-1b0d-43df-a23f-e71968bf5c4f")) {                    Plotly.newPlot(                        "3da79eaa-1b0d-43df-a23f-e71968bf5c4f",                        [{"customdata":[["Outlier",0.0,0,"Definição de liderança e organização em estratégias de categorias","Quando a gente foi fazer a estratégia de novas categorias, vimos que tinham três áreas fazendo, trabalhando na mesma frente.\u003cbr\u003eAí a gente se juntou e foi para uma frente só. Acho que no final cada área vai por o\u003cbr\u003eseu ponto, mas tem que ficar claro quem lidera o tema. Acho que cada tema precisa ter um líder, uma\u003cbr\u003eárea líder, e isso precisa ser definido logo no começo, o líder é essa área, então essa área vai ser\u003cbr\u003eresponsável por falar com todas e organizar direito, mas não ter três áreas liderando o tema.",-1,"No clusters (\u003c 15.0%)",0.15,"Tensão","Clareza de papéis","Marketing & Revenue & Estrategia","Entrevista","Outlier"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Outlier","marker":{"color":"#3366CC","size":[0.15],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Outlier","orientation":"v","showlegend":true,"x":[8.913719],"xaxis":"x","y":[5.250133],"yaxis":"y","type":"scatter"},{"customdata":[["0",1.0,1,"A importância de celebrar e reconhecer na Suzano","Acho que a gente tem que celebrar mais. Acho que a gente celebra pouco ainda na Suzano. Isso até antes\u003cbr\u003eda integração já era uma dor. O real que a gente tem que ter atenção, assim, de reconhecer e celebrar.",0,"C0(100.0%)",1.0,"Tensão","Celebração | Identidade","Marketing & Revenue & Estrategia","Entrevista","Celebrar Conquistas e Reconhecer"],["0",1.0,1,"A importância da pausa para celebrar, refletir e aprender","Passamos de uma ação para a outra, sem uma pausa para celebrar, refletir e aprender. Como consequência as pessoas não\u003cbr\u003esão devidamente reconhecidas e perdemos oportunidades de aprendizagem.",0,"C0(100.0%)",1.0,"Tensão","Celebração","Professional","Entrevista","Celebrar Conquistas e Reconhecer"],["0",1.0,1,"A importância da validação na nova cultura: reconhecimento necessário","Eu acho que se celebram pouco os louros. Não é fazer uma festa de carnaval, apenas reconhecer. Para a gente\u003cbr\u003eque está ingressando, a validação na nova cultura é importante.",0,"C0(100.0%)",1.0,"Tensão","Celebração | Identidade","Professional","Entrevista","Celebrar Conquistas e Reconhecer"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Celebrar Conquistas e Reconhecer","marker":{"color":"#DC3912","size":[1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Celebrar Conquistas e Reconhecer","orientation":"v","showlegend":true,"x":[12.752564,12.791554,12.869743],"xaxis":"x","y":[4.1113806,4.018719,3.942223],"yaxis":"y","type":"scatter"},{"customdata":[["1",0.4514674387198872,1,"Falta de confiança após desligamentos e incertezas na liderança","Eles (da KC) não têm muita confiança, porque, por exemplo, a gente teve os desligamentos do time, aí depois dos\u003cbr\u003edesligamentos o head aqui da unidade, chamou todos os líderes para falar, gente, finalizamos os desligamentos, vamos passar um risco\u003cbr\u003eno chão, bola para frente, quem está aqui está, e vamos continuar screvendo a nossa história. E daí, no dia\u003cbr\u003eseguinte, a gente ia ter um team building com a liderança, os líderes me falaram que eles nem dormiram, e\u003cbr\u003eque eles estavam pensando que o dia do desligamento da liderança ia ser no dia seguinte. Então, assim, parece que\u003cbr\u003eeles ainda não confiaram.",1,"C1(45.1%)",0.4514674387198872,"Tensão","Segurança psicológica","Gente & Gestão","Entrevista","Medo de Conflitos Profissionais"],["1",1.0,1,"Dificuldade em dar feedback negativo e discordar em reuniões","Se a gente precisar fazer uma conversa difícil, dar um feedback negativo pra alguém, puxar mais, eu acho que eles\u003cbr\u003e(ex-KC) têm dificuldade, tanto é que entre eles mesmos, entrar em reunião, é difícil eles ficarem discordando de algum processo,\u003cbr\u003ede alguma pessoa, de alguma... porque às vezes eu acho que eles levam muito assim, ah, talvez se eu falar,\u003cbr\u003eeu vou ser reativo, eu vou estar chateando a pessoa, então eles têm um pouco de dificuldade nisso.",1,"C1(100.0%)",1.0,"Tensão","Segurança psicológica | Reuniões","Gente & Gestão","Entrevista","Medo de Conflitos Profissionais"],["1",1.0,1,"Risco de retenção de equipe em mercado aquecido","Se tiver que sustentar um time motivado e com alta carga de trabalho durante meses, começa a ter risco de\u003cbr\u003eretenção. Pessoas boas podem sair, porque o mercado está super aquecido.",1,"C1(100.0%)",1.0,"Tensão","Carga de trabalho","Marketing & Revenue & Estrategia","Entrevista","Medo de Conflitos Profissionais"],["1",0.5796805737481947,1,"O embate cultural no time da KC: oportunidade ou problema?","O time da KC está sentindo essa mudança. Alguns enxergam como oportunidade. Outros acham isso ruim. O processo todo tem\u003cbr\u003eesse embate cultural.",1,"C1(58.0%)",0.5796805737481947,"Tensão","Identidade","Marketing & Revenue & Estrategia","Entrevista","Medo de Conflitos Profissionais"],["1",0.5758810739965702,1,"Aceleração e ansiedade: o impacto da velocidade no sistema","Mas quando engrenar, a gente vai querer botar velocidade. Essa velocidade, ela pode ser interpretada de outras formas do lado\u003cbr\u003ede lá. E a nossa ansiedade, cara, de retomar o volume, de botar uma pressão maior no sistema, cara, eu\u003cbr\u003eacho que isso assustou a turma. E isso eu acho que assustou os caras, assustou quem chegou, falou assim, puta,\u003cbr\u003eesses caras são meio acelerados.",1,"C1(57.6%)",0.5758810739965702,"Tensão","Agilidade | Segurança Psicológica","Supply","Entrevista","Medo de Conflitos Profissionais"],["1",0.41082860972735685,1,"Reunião de trabalho marcante com cobrança agressiva de cliente","Um dos casos que foram marcantes foi numa reunião de trabalho onde participaram toda a gerência de primeira e segunda\u003cbr\u003elinha. Um cara de primeira linha chegou e disse \"como é que a gente erra com esse cliente de novo,\u003cbr\u003evocês tem que ir lá visitar o cara, e pedir desculpas\". Um cara da KC absorveu aquilo ali e provavelmente\u003cbr\u003epensou \"eu preciso arrumar algumas coisas aqui internamente, isso soou de uma forma agressiva\". Deve ter pensado que não poderia\u003cbr\u003ese opor ao cara de primeira linha.",1,"C1(41.1%)",0.41082860972735685,"Tensão","Reuniões | Segurança psicológica","Supply","Entrevista","Medo de Conflitos Profissionais"],["1",1.0,1,"Medo de expressar opiniões e suas consequências no trabalho","O que eu percebo é que os caras da KC também têm medo de, tem sim, um certo medo ali\u003cbr\u003ede colocar o seu posicionamento. No sentido de poder, falar o que pensa. Vai ter um desafio grande aí de\u003cbr\u003eproporcionar segurança psicológica pro time, pra que o time consiga lidar de, cara, de colocar o seu ponto, de discutir,\u003cbr\u003ee não simplesmente acatar qualquer decisão, ouvir, e seguir. O cara que fica muito quieto do outro lado, me parece\u003cbr\u003eque em algum momento ele vai explodir. Explodir no sentido de tchau companhia.",1,"C1(100.0%)",1.0,"Tensão","Reuniões | Segurança psicológica","Supply","Entrevista","Medo de Conflitos Profissionais"],["1",0.4369670492740064,1,"Cobranças e pressões geram mal-estar e interpretações equivocadas nas reuniões","Que aí começou a virar uma cobrança geral, o cara de comercial cobrando supply, o cara de supply cobrando industrial,\u003cbr\u003ee esse negócio começou a gerar centelhas. Então eu tive que tentar recuperar algumas pessoas que se sentiram mal, achando\u003cbr\u003eque o posicionamento de algum diretor foi muito forte em determinada reunião. A gente tem muita transparência pra falar as\u003cbr\u003ecoisa nas reuniões. Essa transparência, às vezes, ela pode ser interpretada como agressividade. Então, assim, eu percebi que algumas pessoas\u003cbr\u003edo meu time se sentiram pressionadas.",1,"C1(43.7%)",0.4369670492740064,"Tensão","Segurança psicológica | Reuniões","Supply","Entrevista","Medo de Conflitos Profissionais"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Medo de Conflitos Profissionais","marker":{"color":"#FF9900","size":[0.4514674387198872,1.0,1.0,0.5796805737481947,0.5758810739965702,0.41082860972735685,1.0,0.4369670492740064],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Medo de Conflitos Profissionais","orientation":"v","showlegend":true,"x":[6.2631187,6.21137,6.3281283,5.964163,6.5640597,5.8944473,6.3190312,5.90871],"xaxis":"x","y":[6.7272224,7.0688176,7.3391514,6.993132,7.319559,7.578731,7.171053,7.454154],"yaxis":"y","type":"scatter"},{"customdata":[["2",1.0,1,"Problemas com geração de boletos causam retrabalho e insatisfação","Ficamos 1 mês sem a geração de boletos via MMC em Professional e isso acabou acarretando muito retrabalho da equipe,\u003cbr\u003einsatisfação junto a nossos clientes e também uma necessidade de maior interação da Gerencia nos casos de bloqueio dos pedidos\u003cbr\u003edos clientes por falta de pagamento. Os boletos voltaram a serem emitidos na semana passada, porém ainda tinham muitos clientes\u003cbr\u003eem situação inadimplente por este motivo e que acabaram tendo seus pedidos bloqueados. Com a falta de pagamento, a cobrança\u003cbr\u003ee bloqueios dos pedidos dos clientes aumentaram, gerando grandes desgastes e também a necessidade de intervenção tanto do vendedor, quanto\u003cbr\u003eda Gerencia na liberação dos pedidos.",2,"C2(100.0%)",1.0,"Tensão","Retrabalho | Ferramentas","Comercial Professional","Chat","Boletos e Análises Travando"],["2",1.0,1,"Desafios na análise de clientes e problemas com o ambiente de trabalho","O que gostaria que fosse diferente? Que tivéssemos rapidamente um DE:PARA da forma como analisamos os clientes e assim a\u003cbr\u003einformação pudesse ser compartilhada sem gerar tantas dúvidas. O que ainda não esta funcionando bem é trabalhar no ambiente MMC,\u003cbr\u003ealém de travar a visualização de uma importante ferramenta que usamos para análise de cliente (SENA), também atualiza com frequencia\u003cbr\u003ee acabo perdendo tempo reiniciando a máquina e instalando o pacote office novamente. Acredito que sera corrigido em Nov.",2,"C2(100.0%)",1.0,"Tensão","Ferramentas","Comercial Professional","Chat","Boletos e Análises Travando"],["2",1.0,1,"Problemas no processo de devolução de produto e dispenser","O processo de devolução de produto e dispenser ainda não está funcionando. Desta forma estamos apoiando o time de devolução\u003cbr\u003epara recebermos os dispenser",2,"C2(100.0%)",1.0,"Tensão","Agilidade","Professional","Chat","Boletos e Análises Travando"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Boletos e Análises Travando","marker":{"color":"#109618","size":[1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Boletos e Análises Travando","orientation":"v","showlegend":true,"x":[11.234118,11.195599,11.104227],"xaxis":"x","y":[3.6471033,3.7759945,3.5392435],"yaxis":"y","type":"scatter"},{"customdata":[["3",1.0,1,"Comparação dos escopos de parceiro em duas empresas","Diferenças entre os escopos de parceiro desempenhados nas duas empresas",3,"C3(100.0%)",1.0,"Tensão","Clareza de papéis","Gente & Gestão","Chat","Culturas Corporativas em Conflito"],["3",1.0,1,"Lideranças da Suzano fazem piadas e críticas sobre Kimberly-Clark","Houve situações em que lideranças da Suzano fizeram piadas e críticas generalizadas sobre como a equipe da Kimberly-Clark trabalhava",3,"C3(100.0%)",1.0,"Tensão","Identidade | Segurança psicológica","Supply","Entrevista","Culturas Corporativas em Conflito"],["3",1.0,1,"Diferenças culturais entre Suzano e Kimberly-Clark: imposição versus colaboração","A cultura da Suzano parece mais impositiva em relação a fornecedores e clientes, enquanto a Kimberly-Clark tinha uma abordagem mais\u003cbr\u003ecolaborativa. Internamente as relações são melhores.",3,"C3(100.0%)",1.0,"Tensão","Identidade","Supply","Entrevista","Culturas Corporativas em Conflito"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Culturas Corporativas em Conflito","marker":{"color":"#990099","size":[1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Culturas Corporativas em Conflito","orientation":"v","showlegend":true,"x":[10.858986,11.334832,11.060823],"xaxis":"x","y":[6.4135046,6.3242426,6.5664253],"yaxis":"y","type":"scatter"},{"customdata":[["4",1.0,1,"Importância da área GSG para movimentações e acesso a informações","A gente tem uma área chamada GSG, que é uma área super importante para que a gente consiga fazer todas\u003cbr\u003eas movimentações de pessoas dentro das estruturas da organização. E essa área, ela detém ali todo o acesso a sistemas,\u003cbr\u003etodo o acesso a informações importantes para que a gente consiga construir uma proposta que faça sentido para a vida\u003cbr\u003ede cada colaborador quando a gente vai fazer movimentos. Então, assim, é tudo muito manual.",4,"C4(100.0%)",1.0,"Tensão","Ferramentas","Gente & Gestão","Entrevista","Dependência Operacional do GSG"],["4",1.0,1,"A dependência das áreas especialistas no dia a dia","Porque eu acho que como BP a gente tem pouca autonomia e a gente depende muito das áreas de expertise,\u003cbr\u003eas áreas especialistas. Então, qualquer coisa que eu preciso gerar em sistema, criar em sistema, de, por exemplo, vou rodar\u003cbr\u003euma movimentação, eu preciso dessa área especialista. E às vezes o meu prazo para atender o negócio é muito diferente\u003cbr\u003eda área especialista. Então, eu tenho que ficar fazendo um trabalho operacional, de além de pedir tudo para eles, ficar\u003cbr\u003ecobrando de um em um segundo para que as coisas sejam liberadas e eu consiga lançar em sistema. Então, eu\u003cbr\u003eacho que essa dependência das nossas áreas especialistas como RH no dia a dia é muito ruim.",4,"C4(100.0%)",1.0,"Tensão","Baixa autonomia | Carga de trabalho","Gente & Gestão","Entrevista","Dependência Operacional do GSG"],["4",1.0,1,"Dependência excessiva do time do GSG prejudica processos operacionais","Ainda ficamos muito dependentes do time do GSG para nos passar qualquer informação operacional que nos ajude a destravar os\u003cbr\u003eprocessos. O SLA (tempo de espera do retorno) é muito alto, por isso, ficamos com os processos parados. Dependemos do\u003cbr\u003eGSG para tudo: criação de posto de trabalho, olhar quando foi a ultima movimentação do colaborador, liberar upgrade de posição,\u003cbr\u003emudar estrutura em sistema, entre outras coisas.",4,"C4(100.0%)",1.0,"Tensão","Informação | Agilidade | Baixa autonomia","Gente & Gestão","Chat","Dependência Operacional do GSG"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Dependência Operacional do GSG","marker":{"color":"#0099C6","size":[1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Dependência Operacional do GSG","orientation":"v","showlegend":true,"x":[6.5648527,6.682084,6.720907],"xaxis":"x","y":[4.9275036,4.9897704,5.074779],"yaxis":"y","type":"scatter"},{"customdata":[["5",0.32950492973161755,1,"Ausência de integração de sistemas de RH prejudica informações confiáveis","Falta informações confiáveis devido a ausência de integração de sistemas de RH",5,"C5(33.0%)",0.32950492973161755,"Tensão","Informação","Comercial","Chat","Desafios na Gestão Profissional"],["5",0.19415694536139427,2,"A carga operacional e a integração com a KC","Enfim, a carga operacional é bastante alta, mas vejo que não é só por conta da integração, sempre tivemos este\u003cbr\u003emodelo. Com a vinda da KC podemos melhorar.",5,"C5(19.4%); C4(20.5%)",0.19415694536139427,"Tensão","Carga de trabalho | Identidade","Gente & Gestão","Chat","Desafios na Gestão Profissional"],["5",0.21062228763162197,2,"Desafios operacionais e dependência no Processo de Negócios","Além do mais, o PN tem uma carga operacuinal muito alta de processos que não estão muito maduros e que\u003cbr\u003ecausam muita dependência do time do GSG.",5,"C5(21.1%); C4(24.2%)",0.21062228763162197,"Tensão","Carga de trabalho | Baixa autonomia","Gente & Gestão","Chat","Desafios na Gestão Profissional"],["5",0.29576638360599544,1,"Argumentos questionáveis para promoção baseada em tempo de casa","Quando a gente vai fazer alguma movimentação com um colaborador, tem dois argumentos que eles trazem para defender uma movimentação,\u003cbr\u003eque para mim não faz o menor sentido, e daí eu já estou estressada com isso também. Porque eu já\u003cbr\u003eestou dois meses falando, falando, falando. Mas assim, um, tem uma vaga aberta. Vamos promover esse colaborador, porque ele tem\u003cbr\u003e20 anos de Kimberly Clark. Aí eu fico... Interessante. É, assim, porque tempo de casa é muito diferente, né? De\u003cbr\u003esenhoridade, de potencial, de desempenho, de performance, é muito diferente. Então, o que eu sempre trago para eles é, gente,\u003cbr\u003eok, ótimo, que maravilhoso a jornada do colaborador, parabéns para ele, mas é a melhor pessoa em termos de potencial\u003cbr\u003epara sentar nessa cadeira? Então, assim, bem complicado isso.",5,"C5(29.6%)",0.29576638360599544,"Tensão","Identidade | Clareza de papéis","Gente & Gestão","Entrevista","Desafios na Gestão Profissional"],["5",0.2283721241480415,2,"A importância de desconstruir a crença da liderança centralizada","precisa ser trabalhada a crença da liderança que fazer gestão do time é papel dos PNs",5,"C5(22.8%); C4(23.6%)",0.2283721241480415,"Tensão","Clareza de papéis","Gente & Gestão","Chat","Desafios na Gestão Profissional"],["5",1.0,1,"Desafios na divulgação de vagas com duas plataformas","Atração de talentos passou a ser mais complicado, pois não conseguimos divulgar as vagas em sistema, visto que estamos operando\u003cbr\u003ecom duas plataformas.",5,"C5(100.0%)",1.0,"Tensão","Informação | Ferramentas","Gente & Gestão","Chat","Desafios na Gestão Profissional"],["5",1.0,1,"Desafios enfrentados na gestão de projetos em empresas","Mudança na exposição, redução de atividades estratégicas, aumento de atividades operacionais, baixa visibilidade, prazos muito apertados.",5,"C5(100.0%)",1.0,"Tensão","Carga de trabalho | Baixa autonomia","Supply","Chat","Desafios na Gestão Profissional"],["5",0.33767977027964957,1,"Desafios na implementação de mudanças organizacionais: falta de padronização e liderança","Falta de padronização dos processos, falta de envolvimento da liderança nas mudanças recentes",5,"C5(33.8%)",0.33767977027964957,"Tensão","Agilidade | Retrabalho","Supply","Chat","Desafios na Gestão Profissional"],["5",1.0,1,"Problemas na gestão de carreira e promoções na empresa","Ausência de plano de carreira, falta de critérios para promoções",5,"C5(100.0%)",1.0,"Tensão","Carreira","Supply","Chat","Desafios na Gestão Profissional"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Desafios na Gestão Profissional","marker":{"color":"#DD4477","size":[0.32950492973161755,0.19415694536139427,0.21062228763162197,0.29576638360599544,0.2283721241480415,1.0,1.0,0.33767977027964957,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Desafios na Gestão Profissional","orientation":"v","showlegend":true,"x":[7.759084,7.4833484,7.2523313,7.3502045,6.915477,7.4673595,7.696712,7.545368,7.4339914],"xaxis":"x","y":[5.7622337,5.2513633,5.400223,6.8152275,5.6864815,6.14879,6.198041,5.7253532,6.341609],"yaxis":"y","type":"scatter"},{"customdata":[["6",0.35707580636766717,2,"Plano de Marketing para marcas de Suzano: estratégia e competitividade","Sobre processos de Marketing, gostaria de ter um Plano mais claro se as marcas de Suzano, como Mimmo e Max\u003cbr\u003ePure serão abertas para venda em Professional, bem como qual sera a estratégia de preços. Estamos num momento de muita\u003cbr\u003epressão dos nossos clientes por preços melhores e a concorrência esta se estruturando e atacando forte nossa base. Ter alternativas\u003cbr\u003ede migração ou incremento de mix dentro do portfólio, acredito que sim traria mais competitividade a nossa divisão e nos\u003cbr\u003edaria mais espaço para crescer e aumentar a entrega em toneladas. Sobre Revenue, ainda não entendi se temos uma meta\u003cbr\u003ede valor adicional com aumento de preços nos clientes de professional para entregar ainda este ano, como tinhamos em KC\u003cbr\u003eou se a eficiencia na execução sera medida atrás da melhora do rol\u002fton nos clientes que estão com este indicador\u003cbr\u003eabaixo da média.\"",6,"C6(35.7%); C3(17.8%)",0.35707580636766717,"Tensão","Clareza de papéis","Comercial Professional","Chat","Autonomia vs Comando Compartilhado"],["6",0.4478108737937291,1,"Preocupação com pagamentos de verbas DSV e acordos de rebate","Tenho um ponto de preocupação sobre os pagamentos de verbas DSV e acordos de rebate para clientes de Professional. Tenho\u003cbr\u003ebuscado incessantemente mais detalhes deste processo para que possa abastecer o time de Suzano e assim não deixar o tramite\u003cbr\u003eparar após a saida do GBS, porém recebo do GBS informações muito vagas e superficiais e temo que este processo\u003cbr\u003eafete nossa relação comercial com o cliente, caso não seja feita um handover correto. Tenho de 1 a 2 reuniões\u003cbr\u003ecom os 2 principais clientes no qual temos este processo (Accor e Sodexo) por semana. Eles estão preocupados de como\u003cbr\u003evai funcionar a apuração, lançamento e continuidade dos pagamentos com a Suzano. Sinto também uma preocupação dos clientes acerca do\u003cbr\u003eque esta pendente ainda como Kimberly, visto que a transição já ocorreu e não temos os devidos retornos por parte\u003cbr\u003ede Kimberly sobre estas pendencias.",6,"C6(44.8%)",0.4478108737937291,"Tensão","Reuniões | Informação","Comercial Professional","Chat","Autonomia vs Comando Compartilhado"],["6",0.2578058483139305,2,"A agilidade da Suzano e a falta de organização","A agilidade da Suzano tem um lado ruim que é curto prazo extremo, que não documentam ou organizam os processos.\u003cbr\u003eEm marketing estão aprendendo pouco com a cultura da KC.",6,"C6(25.8%); C3(16.8%)",0.2578058483139305,"Tensão","Agilidade","Marketing & Revenue & Estrategia","Entrevista","Autonomia vs Comando Compartilhado"],["6",0.23769190743845536,2,"Rebaixamento de cargos na transição: impactos financeiros e emocionais","Algumas pessoas na transição, em termos de nomenclatura, foram rebaixadas. Elas não tiveram perda nenhuma financeira. A Suzano trabalhou um\u003cbr\u003eplano super legal em relação à parte financeira, mas em termos de cargos elas foram rebaixadas. E eu acho que\u003cbr\u003etem pessoas ainda digerindo isso. Tem uma pessoa no meu time que me falou que desceu quadrado, é como se\u003cbr\u003eela tivesse voltado na carreira dois, três níveis, nem anos, dois, três níveis.",6,"C6(23.8%); C11(15.5%)",0.23769190743845536,"Tensão","Identidade | Segurança psicológica | Carreira","Marketing & Revenue & Estrategia","Entrevista","Autonomia vs Comando Compartilhado"],["6",1.0,1,"A importância do senso de dono na Suzano","Uma dor é senso de dono. A Suzano tem isso muito forte. As pessoas realmente se sentem donas e se\u003cbr\u003esentem empoderadas e elas tomam a decisão. A decisão na KC era muito compartilhada. Então, as pessoas não se sentiam\u003cbr\u003etão donas da decisão e do impacto da decisão. A decisão era muito compartilhada e quando você toma a decisão\u003cbr\u003ecompartilhada, você compartilha também os riscos. É o ônus e o bônus da coisa.",6,"C6(100.0%)",1.0,"Tensão","Identidade","Marketing & Revenue & Estrategia","Entrevista","Autonomia vs Comando Compartilhado"],["6",1.0,1,"Desafios na definição e aprovação de verba de marketing","A KC sempre investiu mais em material de ponto de venda, em visibilidade no ponto de venda do que a\u003cbr\u003eSuzano, e investia muito mais. E eu acho que eles estão certos de investir mais do que a gente vem\u003cbr\u003einvestindo. O time me trouxe uma proposta de verba, que era muito mais do que eles faziam lá do que\u003cbr\u003ea Suzano faz aqui, que eu acho que não vai ser nem um mundo nem outro. E aí eu pedi\u003cbr\u003epara eles uma defesa daquela verba, para realmente a gente conseguir aprová-la. Isso deve ter 20 dias. Até hoje, não\u003cbr\u003eveio. E eu já cobrei algumas vezes. Então, eu vou pegar e eu vou fechar a verba do que eu\u003cbr\u003eacho que tem que ser. Sabe? Porque não dá para ficar esperando.",6,"C6(100.0%)",1.0,"Tensão","Informação | Agilidade","Marketing & Revenue & Estrategia","Entrevista","Autonomia vs Comando Compartilhado"],["6",1.0,1,"Diferenças na tomada de decisão entre KC e Suzano","Lá na KC os caras aguardavam vir o direcional e era meio comando e controle. Aqui (Suzano), você sendo até\u003cbr\u003emesmo um analista, a decisão é mais sua mesmo, sem pedir licença. E eles (KC) não têm isso, eles não\u003cbr\u003etêm essa autonomia ainda está. O entendimento ainda não está claro pros caras.",6,"C6(100.0%)",1.0,"Tensão","Clareza de papéis | Baixa autonomia","Supply","Entrevista","Autonomia vs Comando Compartilhado"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Autonomia vs Comando Compartilhado","marker":{"color":"#66AA00","size":[0.35707580636766717,0.4478108737937291,0.2578058483139305,0.23769190743845536,1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Autonomia vs Comando Compartilhado","orientation":"v","showlegend":true,"x":[11.98788,12.165106,11.716404,11.648377,12.188534,12.26432,12.246475],"xaxis":"x","y":[6.084554,6.0577292,5.6704416,5.1522512,5.3098297,5.747431,5.5799327],"yaxis":"y","type":"scatter"},{"customdata":[["7",1.0,1,"A pressão da integração e a falta de direcionamento claro","A integração aumentou a pressão para que tudo fosse resolvido para ontem e gerou ruídos de pontos que antes eram\u003cbr\u003eclaros e alinhados para todos. Sem direcionamento claro de tempos e movimentos, tudo para ontem. Nao existe um cronograma de\u003cbr\u003etrabalho alinhado com todos e qualquer ponto de oportunidade ou issue de outra área passa pela área aqui para resolver.\u003cbr\u003eFalta um cronograma alinhado de trabalho. Exemplo: oportunidade de volume, sinergia (estudo da accenture) versus outras frentes.",7,"C7(100.0%)",1.0,"Tensão","Clareza de papéis | Carga de trabalho","Comercial Consumo","Chat","Reuniões Longas Sem Direcionamento"],["7",1.0,1,"A falta de alinhamento gera confusão e retrabalho nas equipes","aparentemente as pessoas têm autonomia, tomam decisões, depois alinham com seus líderes e voltam atrás em vários temas, gerando confusão\u003cbr\u003ee retrabalho para as equipes",7,"C7(100.0%)",1.0,"Tensão","Baixa autonomia | Retrabalho","Gente & Gestão","Chat","Reuniões Longas Sem Direcionamento"],["7",1.0,1,"Reuniões estratégicas de alinhamento e busca pela perfeição","Então, há reuniões longas, de quatro horas, que se enviam em reuniões estratégicas de alinhamento, e não há descrição dentro\u003cbr\u003edo que se tem que fazer. Então, os que vêm de Kimberly, ao procurar a perfeição, se junta todo o\u003cbr\u003eequipo e começa a armar apresentações para responder todas as perguntas e questionamentos possíveis que pode haver aí. Tudo se\u003cbr\u003eparalisa até armarmos esta apresentação para a liderança com todas as respostas possíveis. Porque tem que ser perfeito.",7,"C7(100.0%)",1.0,"Tensão","Reuniões","Professional","Entrevista","Reuniões Longas Sem Direcionamento"],["7",0.0,2,"Exigências culturais: velocidade versus perfeição - um desafio constante","São duas exigências, duas culturas exigentes, uma pela velocidade e outra pela perfeição, não vai tão rápido como a liderança\u003cbr\u003ede Susano gostaria, nem tudo está tão perfeito como a cultura de Kimberly gostaria.",7,"C7(25.2%); C8(24.1%)",0.252,"Tensão","Agilidade | Identidade","Professional","Entrevista","Reuniões Longas Sem Direcionamento"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Reuniões Longas Sem Direcionamento","marker":{"color":"#B82E2E","size":[1.0,1.0,1.0,0.252],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Reuniões Longas Sem Direcionamento","orientation":"v","showlegend":true,"x":[8.36349,8.269392,8.660801,9.100312],"xaxis":"x","y":[7.454316,7.399391,7.480314,7.0854907],"yaxis":"y","type":"scatter"},{"customdata":[["8",1.0,1,"Os problemas do retrabalho causados por decisões rápidas e medo","Eu acho que, assim, por conta de uma tomada de decisão rápida, de uma agilidade muito rápida, as pessoas geram\u003cbr\u003emuito retrabalhos, as pessoas acabam fazendo as mesmas coisas porque talvez tenha medo de que o outro não faça.",8,"C8(100.0%)",1.0,"Tensão","Agilidade | Retrabalho","Gente & Gestão","Entrevista","Pressa Gera Retrabalho Desnecessário"],["8",1.0,1,"A importância da velocidade e do planejamento no trabalho","a velocidade é importante, mas o mínimo de planejamento é fundamental",8,"C8(100.0%)",1.0,"Tensão","Agilidade","Gente & Gestão","Chat","Pressa Gera Retrabalho Desnecessário"],["8",1.0,1,"Atrapalhos causados por pedidos urgentes e falta de planejamento","os pedidos urgentes que atrapalham a rotina, muitas vezes ocorrem pedidos de coisas que são urgentes e faltou planejamento, ou\u003cbr\u003ede coisas que não são tão urgentes assim, mas por algum motivo fazemos a entrega virar para ontem. a solução\u003cbr\u003eée planejamento e menos ansiedade de coisas que nem são urgentes saírem para ontem.",8,"C8(100.0%)",1.0,"Tensão","Carga de trabalho | Retrabalho","Gente & Gestão","Chat","Pressa Gera Retrabalho Desnecessário"],["8",0.365972700771882,2,"Desperdício de informações devido a mudanças rápidas de direção","As mudanças rapidas estao gerando retrabalhos. O time prepara muitas informações conforme solicitado e rapidamente mudamos de direção e gera\u003cbr\u003euma frustração pela falta de aproveitamento do material e dos temas.",8,"C8(36.6%); C7(25.3%)",0.365972700771882,"Tensão","Agilidade | Retrabalho","Supply","Chat","Pressa Gera Retrabalho Desnecessário"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Pressa Gera Retrabalho Desnecessário","marker":{"color":"#316395","size":[1.0,1.0,1.0,0.365972700771882],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Pressa Gera Retrabalho Desnecessário","orientation":"v","showlegend":true,"x":[8.223489,8.557934,8.4355,8.05421],"xaxis":"x","y":[6.771417,6.78658,6.6265397,7.0402613],"yaxis":"y","type":"scatter"},{"customdata":[["9",1.0,1,"Equipe precisa se atualizar sobre processos de gestão de pessoas","A equipe não conhece os novos processos de gestão de pessoas. Processo de Seleção, Avaliação de Desempenho, abertura de chamados\u003cbr\u003ede folha de pagamento. Poderíamos ter abertura de chamados de folha de pagamento, oferecer plantões de dúvidas aos colaboradores.",9,"C9(100.0%)",1.0,"Tensão","Clareza de papéis | Informação","Gente & Gestão","Chat","Processos RH Em Evolução"],["9",1.0,1,"Análise dos processos de RH na Kimberly para melhorias","Podemos entender os processos de rh que existiam na kimberly para tentarmos melhorar os nossos e criar uma terceira versão\u003cbr\u003epossível. Precisamos entender qual era o papel do BP na Kimberly e como os processos que são operacionais aqui eram\u003cbr\u003erealizados por lá.",9,"C9(100.0%)",1.0,"Tensão","Clareza de papéis","Gente & Gestão","Chat","Processos RH Em Evolução"],["9",1.0,1,"Impacto das mudanças nos processos: regras e procedimentos mais definidos","Impactou em mudanças nos processos. Gostaria que houvessem regras e procedimentos mais bem definidos, sem necessidade de discussões e reuniões.\u003cbr\u003eExemplo de mudança de processo: reuniões estratégicas mais voltada para liderança, sem envolvimento das equipes.",9,"C9(100.0%)",1.0,"Tensão","Clareza de papéis | Reuniões","Supply","Chat","Processos RH Em Evolução"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Processos RH Em Evolução","marker":{"color":"#3366CC","size":[1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Processos RH Em Evolução","orientation":"v","showlegend":true,"x":[9.222055,8.945817,8.582674],"xaxis":"x","y":[3.721326,3.803434,3.8712897],"yaxis":"y","type":"scatter"},{"customdata":[["10",1.0,1,"Análise de clientes e tomada de decisão prejudicadas pela falta de clareza","A análise dos clientes, tanto para reajustes quanto para defesa em caso de ataques da concorrência, acabou ficando mais lenta.\u003cbr\u003eA falta de uma claridade de qual rol\u002fton por produto entrega uma boa margem de contribuição deixa aequipe insegura quanto\u003cbr\u003ea tomada de decisão.",10,"C10(100.0%)",1.0,"Tensão","Informação","Comercial Professional","Chat","Dúvidas Financeiras Atrasam Decisões"],["10",1.0,1,"Impactos processuais na rotina: desafios na análise de rentabilidade","Impactos processuais na rotina: com relação a rotina, o que sinto que mais afetou e afeta minha rotina são a\u003cbr\u003enova forma de ver o business. Estávamos acostumados a classificar um cliente como rentável ou não rentável através do GP,\u003cbr\u003ecom a migração, a visualização do GP tem gerado dúvidas quanto a forma de cálculo e identificar se um produto\u003cbr\u003eou cliente esta saudável se tornou mais difícil. Só agora no final do mês de Agosto estamos tendo mais informações\u003cbr\u003esobre as novas nomenclaturas de rol\u002fton, porém ainda sem muito entendimento se o atual rol\u002fton do cliente é bom ou\u003cbr\u003eruim, visto que o balizador é a média.",10,"C10(100.0%)",1.0,"Tensão","Identidade | Ferramentas","Comercial Professional","Chat","Dúvidas Financeiras Atrasam Decisões"],["10",0.3168437818311085,2,"Necessidade de clareza e aprendizado em processos internos da empresa","muitos processos mudaram e não estão claros... estamos tentando aprender quando chega a demanda e a informação não é acessível\u003cbr\u003ee clara a todos. processo de criação de códigos, formação de preços... entre outros. eu acredito que uma alternativa seria\u003cbr\u003eter as instruções de processo devidamente detalhadas para consulta e promover um workshop para esclarecer processos mais críticos.",10,"C10(31.7%); C9(24.4%)",0.3168437818311085,"Tensão","Ferramentas | Informação","Marketing & Revenue & Estrategia","Chat","Dúvidas Financeiras Atrasam Decisões"],["10",1.0,1,"Problemas no acesso às informações financeiras: falta de clareza e detalhes","O acesso a informações financeiras está prejudicado - não é prazo e sim como estão sendo disponibilizados ...formato ... nível\u003cbr\u003ede informação disponível. Exemplo: Análise das marcas; de\u002fpara de KC para Suzano; isso nos deixa sem entender o que está\u003cbr\u003e\"se passando\" com os resultados.",10,"C10(100.0%)",1.0,"Tensão","Ferramentas | Informação","Marketing & Revenue & Estrategia","Chat","Dúvidas Financeiras Atrasam Decisões"],["10",1.0,1,"Dependência de informações externas causa estresse e atrasos no trabalho","a rotina mudou totalmente, pois dependemos muito de outras informações da KC, sistema, power pi. deixou o trabalho mais estressante,\u003cbr\u003epois não temos informações, ai temos que solicitar para pessoas que vieram da KC para pegar um simples relatorio de\u003cbr\u003efaturamento. agora final do mês, onde acompanhamos o faturamento, temos que esperar alguém da KC para informar, eu como Suzano\u003cbr\u003enão consigo acessar de hora em hora. isso atrasa o trabalho pois preciso me programar para saber quanto falta da\u003cbr\u003emeta",10,"C10(100.0%)",1.0,"Tensão","Informação | Ferramentas","Supply","Chat","Dúvidas Financeiras Atrasam Decisões"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Dúvidas Financeiras Atrasam Decisões","marker":{"color":"#DC3912","size":[1.0,1.0,0.3168437818311085,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Dúvidas Financeiras Atrasam Decisões","orientation":"v","showlegend":true,"x":[10.196223,10.091405,9.406697,9.876516,9.829254],"xaxis":"x","y":[3.2565923,3.4815679,3.215849,3.0253553,3.080133],"yaxis":"y","type":"scatter"},{"customdata":[["11",0.3858312206329119,1,"A carga de trabalho intensa na Suzano: um desafio persistente","Um tema que é muito forte na Suzano, que é a carga de trabalho. Aqui tem o lance do forte,\u003cbr\u003egentil, e eles têm essa questão da startup de 100 anos e tudo mais, é natural, a gente está há\u003cbr\u003edois meses e meio, então é natural essa carga excessiva de trabalho no começo de uma fusão. Eu tenho medo\u003cbr\u003ede que isso se estenda",11,"C11(38.6%)",0.3858312206329119,"Tensão","Carga de trabalho","Marketing & Revenue & Estrategia","Entrevista","Burocracia entre Duas Casas"],["11",1.0,1,"Derrubando os muros de Suzano e MMC: uma reflexão necessária","Eu queria ter derrubado antes os muros de Suzano e MMC, cara, e o que eu chamo de derrubar o\u003cbr\u003emuro? É pegar, por exemplo, o analista do meu time que olha as plantas hoje de Belém e Imperatriz e\u003cbr\u003efala, cara, a partir da manhã você vai olhar Mogi e você que olha Mogi, você vai olhar Belém e\u003cbr\u003eImperatriz, é, desse jeito, desse jeito. E tô pra te falar, cara, que eu escutei um próprio feedback dos meus\u003cbr\u003ecoordenadores que tem tanta coisa acontecendo que deixa, por enquanto, assim, porque é um risco ainda maior da gente fazer\u003cbr\u003eisso agora.",11,"C11(100.0%)",1.0,"Tensão","Clareza de papéis | Identidade","Supply","Entrevista","Burocracia entre Duas Casas"],["11",1.0,1,"Burocracias e Tempo: Desafios na Fábrica de Mogi","A gente precisou fazer um carregamento diferente na fábrica de Mogi, é o tipo de coisa que talvez uma fábrica\u003cbr\u003eda Suzano, rápido a gente fala, conecta, semana que vem tá rodando, eu senti que Mogi, a gente precisa passionar\u003cbr\u003eum time da qualidade, passionar um time da segurança, e passar por um comitê, que mês que vem, e avaliar\u003cbr\u003epra daqui dois meses rodar, então assim, eu acho que existe umas burocracias que talvez só o tempo vai derrubar.",11,"C11(100.0%)",1.0,"Tensão","Reuniões | Agilidade | Retrabalho ","Supply","Entrevista","Burocracia entre Duas Casas"],["11",1.0,1,"Desafios na gestão de processos durante a transição empresarial","Na parte de processos tem sido um pouco da gente ter que respirar, porque a gente teve essa parte agora\u003cbr\u003eda empresa temporária, que é a MMC, então tem várias coisas que eu já queria estar dando mais velocidade, seja\u003cbr\u003ede relatórios, de sinergia e etc, e a gente se pega até no dia a dia, sabe, esquecendo alguma coisa,\u003cbr\u003eesquecendo de esperar que se tudo der certo, em novembro a gente acaba com essas duas empresas, então confesso que\u003cbr\u003eisso atrapalha a parte de processo, tem muita coisa que fica chato, a gente gera uma informação de Suzano, as\u003cbr\u003ecoisas de MMC não estão dentro daquele relatório, um pouco de sempre estar tendo que lembrar para também introduzir todo\u003cbr\u003emundo junto, de não ficar só olhando Suzano.",11,"C11(100.0%)",1.0,"Tensão","Agilidade | Retrabalho | Informação","Supply","Entrevista","Burocracia entre Duas Casas"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Burocracia entre Duas Casas","marker":{"color":"#FF9900","size":[0.3858312206329119,1.0,1.0,1.0],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Burocracia entre Duas Casas","orientation":"v","showlegend":true,"x":[10.998624,10.783162,10.6171055,10.830971],"xaxis":"x","y":[5.5761623,5.350737,5.536085,5.1167397],"yaxis":"y","type":"scatter"},{"customdata":[["12",0.17546200163760015,2,"Desafios na integração de dados e burocracia no suporte","Alguns processos precisamos entender e procurar diversas pessoas para conseguir alguma informação e na virada de mês Junho de integração\u003cbr\u003ealguns dados e bases não recebemos de maneira correta da KC, impactando em retrabalhos e atividades que realizamos para regularizar\u003cbr\u003ebases que deveriam chegar corretas para a gente na integração. Hoje pós os primeiros meses, em setembro, o fluxo e\u003cbr\u003eas atividades estão mais organizadas. O atendimento do suporte na Costa Rica gera muita burocracia e tem prazos muito logos\u003cbr\u003evs a realidade e momento de negocio que precisamos.",12,"C12(17.5%); C10(21.7%)",0.17546200163760015,"Tensão","Informação | Retrabalho","Comercial Consumo","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.14882591104756648,3,"Desafios na gestão de processos e dados nas empresas","Processos estão na pessoas e isso torna frágil a credibilidade dos dados, além de moroso e com muitos retrabalhos. Sinto\u003cbr\u003edificuldades em resolver problemas do dia a dia, a interface não é clara de onde começa e termina entre as\u003cbr\u003eáreas. Exemplos incluem a) Processo de transferência e mudança de colaboradores, não temos um sistema para consultar as informações b)\u003cbr\u003eentendo que temos oportunidade com uma plataforma integrada. c) excesso de planilhas com dados desatualizados.",12,"C12(14.9%); C9(20.8%); C10(18.1%)",0.14882591104756648,"Tensão","Clareza de papéis | Retrabalho | Ferramentas","Gente & Gestão","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.2624403356983445,2,"Dúvidas dos gestores sobre controle de jornada no Apdata","Creio que o fato de existir dois sistemas que seguem processos e fluxos diferentes. Gestores questionam sobre controle de jornada\u003cbr\u003ee demais temas que não estão claros sobre como funciona no apdata.",12,"C12(26.2%); C11(22.7%)",0.2624403356983445,"Tensão","Ferramentas","Gente & Gestão","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.347819363911551,2,"Dificuldades de acesso ao treinamento e sistema de novembro","Acho que eles cobram muito também ter acesso ao treinamento, ao nosso sistema de treinamento, só que isso a gente\u003cbr\u003esó vai conseguir mesmo para novembro, então é uma coisa que eles reclamam bastante, de, ah, a gente não... Porque\u003cbr\u003ea TI falou que precisa do número pessoal para vincular o nosso sistema, e eles não têm esse NP, né,\u003cbr\u003eprecisa estar no sistema Suzano mesmo para conseguir liberar o acesso, quando é de outra empresa a gente não consegue,\u003cbr\u003eprecisa fazer muito manual, e daí gera uma complexidade tão grande que para tudo que a gente tem que entregar\u003cbr\u003enesse momento que é mais crítico, isso acabou caindo de priorização, entendeu? Então vai ser só novembro.",12,"C12(34.8%); C11(19.0%)",0.347819363911551,"Tensão","Segurança psicológica | Ferramentas","Gente & Gestão","Entrevista","Desafios Operacionais Pós-Integração Sistemas"],["12",0.2281441673680741,1,"Desafios na gestão de demanda e responsabilidades em empresas","Excesso de demanda por não haver priorização das atividades e tempo para planejamento, devido a \"rapidez\" ser o modus operandi\u003cbr\u003ecultural. processo de afastamento\u002fatestados de colaboradores, time MMC e Suzano com dificuldade de direcionar. Temas com dificuldade de saber quem\u003cbr\u003eé responsável ex: contratação de temporários",12,"C12(22.8%)",0.2281441673680741,"Tensão","Agilidade | Carga de trabalho | Clareza de papéis","Gente & Gestão","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.47819465921916643,1,"Falta de integração entre times industrial e corporativo: soluções possíveis","falta integração entre os times do industrial e corporativo, um espaço de trocas, de saber o que está acontecendo. ver\u003cbr\u003eas mensagens no whats fica superficial. Poderíamos compartilhar mais entre nós e com detalhes as várias ações que estão sendo\u003cbr\u003efeitas, além de aproveitar para ter mais sinergia, talvez através de momentos de trocas entre as equipes. Poderíamos criar rituais\u002fencontros\u003cbr\u003ecom pautas para serem compartilhadas e quem tiver realizando algo naquela ocasião pode apresentar mais detalhes. Exemplo: Apresentar um projeto\u003cbr\u003eque acabou de ser implementado, ou será implementado. Outro exemplo: Contar como foi o processo até chegar no Dia D\u003cbr\u003e(poderia gerar muitos aprendizados para o grupo).",12,"C12(47.8%)",0.47819465921916643,"Tensão","Clareza de papéis | Reuniões | Informação","Gente & Gestão","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",1.0,1,"Desafios na integração de processos e sistemas em empresas","Vejo que identificar as similaridades e diferenças entre os processos das suas empresas segue em evolução e faz parte do\u003cbr\u003emomento. Vejo que temos muitas frentes de atuação e sinto que podemos ponderar melhor as ações para que tenhamos uma\u003cbr\u003egovernança melhor dos temas e tempo para absorver as informações. Exemplo, conhecer os fluxos e processos de Gente e Gestão,\u003cbr\u003eas frentes de atuação, fluxo de jornadas e sistemas. Como estamos lidando com dois sistemas ao mesmo tempo, Suzano e\u003cbr\u003eMMC enquanto estamos no processo de integração de ambos, alguns pontos como a movimentações de profisisonais, transferências e fluxos mais\u003cbr\u003eoperacionais, podem ter seu SLA afetado.",12,"C12(100.0%)",1.0,"Tensão","Clareza de papéis | Informação | Carga de trabalho | Agilidade","Gente & Gestão","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.19465310707634606,2,"Dificuldades na operação de processos e falta de informação","alguns processos ainda estão funcionando como MMC, mas há muitas dúvidas sobre como eles são operados na Suzano... toda vez\u003cbr\u003eque tenho dúvidas tenho que buscar informações... não há nada para consultar, documentos, instruções ou algo do tipo, a informação\u003cbr\u003eestão nas pessoas e isso dificulta o aprendizado. Um exemplo é criação de códigos, não sabemos como fazer, não está\u003cbr\u003eclaro as ferramentas e sistemas e critérios para criação de novas marcas e profit centers. Isso demandou várias reuniões com\u003cbr\u003ediferentes áreas para entendimento de como operacionalizar e com isso, aumento no prazo de conclusão das tarefas... algo que poderia\u003cbr\u003eser simples vem tomando mais tempo que o o necessário pela falta de informação.",12,"C12(19.5%); C11(21.4%)",0.19465310707634606,"Tensão","Clareza de papéis | Informação | Ferramentas | Reuniões | Agilidade","Marketing & Revenue & Estrategia","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.1494313477350092,3,"Desafios e aprendizados na capacitação do novo time","Acredito que ensinar diversos pontos de excel, automatização, e alguns itens bastante básicos que não estavam inseridos no dia a\u003cbr\u003edia do pessoal que chegou da KC. Contudo, o time recebido aprendeu super rápido diversos pontos, porém ainda sinto falta\u003cbr\u003ede alguns pensamentos a longo prazo, por exemplo: existem materiais que são atualizados todo mês, materiais dificeis, e o novo\u003cbr\u003etime acaba sempre dependendo das análises do time antigo para conseguir seguir.",12,"C12(14.9%); C9(22.0%); C10(16.4%)",0.1494313477350092,"Tensão","Baixa autonomia","Marketing & Revenue & Estrategia","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.0,1,"Problemas decorrentes da falta de entendimento das áreas envolvidas","Há um processo que envolve 4 áreas: estratégia e marketing, trade marketing, inteligência comercial e comercial. Estratégia é definida pelo\u003cbr\u003eprimeiro. Trade marketing cascateia a estratégia para o ponto de venda. Inteligência comercial trazem insights bem micro e implementam com\u003cbr\u003eo time comercial. Esse o escopo geral, mas acontecem vários problemas pelo não entendimento das responsabilidades das áreas.",12,"C12(15.6%)",0.156,"Tensão","Clareza de papéis","Marketing & Revenue & Estrategia","Entrevista","Desafios Operacionais Pós-Integração Sistemas"],["12",0.32464219528057275,1,"Dificuldades e oportunidades na integração de processos entre áreas","Tivemos bastante dificuldade pois muitos processos que temos na nossa área não eram olhados pela mesma área deles, dados, análises,\u003cbr\u003eetc, o que causou uma certa dependência das análises Suzano. O desafio está sendo lidar um pouco com essa nova\u003cbr\u003erotina de ensinar sobre nossos procedimentos porém vejo muita oportunidade para que nós Suzano possamos aprender também com os integrantes\u003cbr\u003eque chegaram agora.",12,"C12(32.5%)",0.32464219528057275,"Tensão","Clareza de papéis | Informação | Baixa autonomia","Marketing & Revenue & Estrategia","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.0,1,"Unificação do pipeline de projetos de inovação é um desafio","Tinha um book de projetos gigante, cada um (área) com um modelo diferente. Registro e evoluções de projeto não tinha\u003cbr\u003enada. Agora tem um PMO ajudando nisso. São projetos de inovação. Professional tinha um pipeline, outras áreas tinham outro. Agora\u003cbr\u003eestão unificando essa visualização, mas é um ponto fraco deles.",12,"C12(25.4%)",0.254,"Tensão","Clareza de papéis | Ferramentas","Marketing & Revenue & Estrategia","Entrevista","Desafios Operacionais Pós-Integração Sistemas"],["12",1.0,1,"Desafios de operar dois sistemas e balancear nível de serviço e custo","Complexidade de operar dois sistemas, primeiramente manter operativo o sistema MMC e, em paralelo aprender os sistemas suzano. Processo OTC\u003cbr\u003emais moroso e mais complexo na Suzano. Isso trouxe maior carga de trabalho e responsabilidade. processo de custos e transportes.\u003cbr\u003eUm exemplo é o acompanhamento do carteira e faturamento em dois BI diferentes. Os desafios são balancear nível de serviço\u003cbr\u003ee custo com foco na satisfação do cliente NOC.",12,"C12(100.0%)",1.0,"Tensão","Carga de trabalho | Ferramentas","Supply","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.3098854017365421,1,"Promovendo integração entre funcionários não líderes de diferentes áreas","No quesito pessoal, acho que a esfera de funcionários não líderes (estagiários à analistas) da MMC e Suzano ainda se\u003cbr\u003econhecem muito mal, especialmente os de áreas paralelas (que não ficam no mesmo time). Entendo que é inviável fazer eventos\u003cbr\u003ede integração com todos, mas eu acho que as lideranças poderiam promover encontros entre áreas para a turma se conhecer\u003cbr\u003emelhor. Eu ainda tenho dificuldade de saber quem procurar quando preciso de alguma informação específica de MMC de algumas áreas.",12,"C12(31.0%)",0.3098854017365421,"Tensão","Identidade | Informação | Clareza de papéis","Supply","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.1418758596534917,2,"Desafios na gestão de processos e expectativas em mudança rápida","Em termos de processos a maior dificuldade é atender as diferentes expectativas e a mudança rápida de direção. Alguns assuntos\u003cbr\u003eimportantes tem ficado muito 'de canto', como por exemplo PB. Tema extremamente relevante e não está bem calibrado no inicio.\u003cbr\u003eacho que o assunto deveria ter começado a ser abordado antes. E continua não estando claro os prazos e papeis\u003cbr\u003ee responsabilidades",12,"C12(14.2%); C9(21.6%)",0.1418758596534917,"Tensão","Clareza de papéis","Supply","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",1.0,1,"Adaptação e exploração dos processos de ciclo S&OP","mudança nos processos de ciclo S&OP, ainda em adaptação, mas funcionando bem. Entrada na área com time espelho. Está sendo\u003cbr\u003epositivo pela troca de experiências, mas ainda precisamos explorar e detalhar mais como ficará organizada a estrutura e os processos\u003cbr\u003eno dia a dia. Inicialmente usamos o modelo Suzano e agora estamos explorando as oportunidades do melhor dos dois lados.\u003cbr\u003eAcredito que o alto volume de agendas de sinergia e integração, bem como o fluxo de altas pessoas é um\u003cbr\u003efator que dificulta",12,"C12(100.0%)",1.0,"Tensão","Clareza de papéis | Reuniões | Identidade","Supply","Chat","Desafios Operacionais Pós-Integração Sistemas"],["12",0.0,1,"Desafios da integração de sistemas para análise de informações","O fato de estarmos trabalhando em dois sistemas atrapalha bastante, fica muito difícil analisar as informações de forma completa por\u003cbr\u003etudo depender de duas fontes e dois relatórios, mas acho que é algo natural até a integração completa. Eu preciso\u003cbr\u003eenxergar no meu trabalho, o histórico completo de todas as regionais de vendas de vendas. Mas para fazer isso, eu\u003cbr\u003epreciso montar arquivos que unem as bases dos dois sistemas, sendo que elas não necessariamente irão conversar muito bem -\u003cbr\u003eisso acaba exigindo muito tempo de ajustes manuais para fazer uma análise, que, no sistema único, não exigiria tempo algum.",12,"C12(19.6%)",0.196,"Tensão","Clareza de papéis | Informação | Ferramentas","Supply","Chat","Desafios Operacionais Pós-Integração Sistemas"]],"hovertemplate":"Cluster_Name=%{customdata[12]}\u003cbr\u003eSize_Prob=%{customdata[7]}\u003cbr\u003eLabel=%{customdata[3]}\u003cbr\u003eDescription=%{customdata[4]}\u003cbr\u003eCluster=%{customdata[5]}\u003cbr\u003eCluster_Assignments=%{customdata[6]}\u003cbr\u003eType=%{customdata[8]}\u003cbr\u003eTags=%{customdata[9]}\u003cbr\u003eÁrea origem=%{customdata[10]}\u003cbr\u003eEntrevista=%{customdata[11]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Desafios Operacionais Pós-Integração Sistemas","marker":{"color":"#109618","size":[0.17546200163760015,0.14882591104756648,0.2624403356983445,0.347819363911551,0.2281441673680741,0.47819465921916643,1.0,0.19465310707634606,0.1494313477350092,0.156,0.32464219528057275,0.254,1.0,0.3098854017365421,0.1418758596534917,1.0,0.196],"sizemode":"area","sizeref":0.00125,"symbol":"circle","line":{"color":"DarkSlateGrey","width":1}},"mode":"markers","name":"Desafios Operacionais Pós-Integração Sistemas","orientation":"v","showlegend":true,"x":[10.18851,9.714606,10.957251,10.314156,9.76781,10.641511,10.550535,11.178331,9.647357,9.229127,10.079077,9.796104,10.407672,10.787198,9.333441,10.316445,9.624578],"xaxis":"x","y":[4.0110164,4.0413866,4.687309,5.1079144,4.4513526,4.5054703,4.6913013,4.7006087,4.0951324,4.861913,4.427997,4.9124637,4.810901,4.3488517,4.356853,4.695069,5.114951],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"UMAP Dimensão 1"},"showgrid":false,"showticklabels":false,"ticks":"","showline":true,"mirror":true,"linecolor":"gray","linewidth":2,"zeroline":false,"autorange":false,"range":[5.196917724609375,13.56727294921875]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"UMAP Dimensão 2"},"showgrid":false,"showticklabels":false,"ticks":"","showline":true,"mirror":true,"linecolor":"gray","linewidth":2,"zeroline":false,"autorange":false,"range":[2.570017766952515,8.034068632125855]},"legend":{"title":{"text":"Grupos Temáticos"},"tracegroupgap":0,"itemsizing":"constant","yanchor":"top","y":0.99,"xanchor":"left","x":1.02},"margin":{"t":60},"height":800,"width":1280,"title":{"font":{"size":24},"text":"Nome do Mapa","y":0.96,"x":0.25,"xanchor":"right","yanchor":"top"},"dragmode":"pan","images":[{"layer":"above","opacity":1,"sizex":0.2,"sizey":0.2,"sizing":"contain","source":"https:\u002f\u002fraw.githubusercontent.com\u002frodbastos\u002frodbastos.github.io\u002frefs\u002fheads\u002fmain\u002flogo-principal-tt.svg","x":1,"xanchor":"right","xref":"paper","y":0,"yanchor":"bottom","yref":"paper"}],"paper_bgcolor":"#F2EFEB","plot_bgcolor":"#F2EFEB"},                        {"responsive": true}                    )                };                            </script>        </div>
+            </div>
+
+            <div class="section">
+                <h2>Análise dos Clusters</h2>
+    
+                <div class="cluster-summary" style="border-left: 4px solid 5;">
+                    <details>
+                        <summary class="cluster-name">Desafios na Gestão Profissional</summary>
+                        <div class="cluster-content">Este cluster "Desafios na Gestão Profissional" retrata um cenário de múltiplos desafios operacionais e estratégicos enfrentados na gestão de recursos humanos e desenvolvimento organizacional.
+
+O primeiro grande eixo de problemas está relacionado a questões sistêmicas e operacionais, incluindo a falta de integração entre sistemas de RH, sobrecarga operacional e dificuldades com plataformas duplas para divulgação de vagas. Soma-se a isso a ausência de padronização de processos e prazos muito apertados, que impactam a eficiência do trabalho.
+
+O segundo eixo refere-se a desafios culturais e de gestão de pessoas, evidenciando problemas na gestão de carreira e critérios de promoção. Há uma necessidade clara de desconstruir práticas antigas, como promoções baseadas apenas em tempo de casa, e de estabelecer critérios mais objetivos para o desenvolvimento profissional.
+
+Principais pontos de atenção:
+- Problemas de integração e confiabilidade dos sistemas de RH
+- Sobrecarga operacional e dependência entre departamentos
+- Falta de padronização de processos
+- Critérios questionáveis para promoções e movimentações
+- Ausência de plano de carreira estruturado
+- Necessidade de maior envolvimento da liderança
+- Redução de atividades estratégicas em favor de operacionais
+- Desafios na atração de talentos devido a limitações sistêmicas</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 7;">
+                    <details>
+                        <summary class="cluster-name">Reuniões Longas Sem Direcionamento</summary>
+                        <div class="cluster-content">Resumo do Cluster "Reuniões Longas Sem Direcionamento"
+
+Este cluster revela um cenário de conflito organizacional marcado pela falta de alinhamento estratégico e choque entre diferentes culturas corporativas após um processo de integração. O principal ponto de tensão se manifesta na dicotomia entre a busca pela perfeição (cultura Kimberly) e a demanda por velocidade (cultura Suzano), resultando em processos decisórios ineficientes e reuniões excessivamente longas.
+
+A ausência de um direcionamento claro e cronogramas bem definidos tem gerado diversos problemas operacionais, incluindo retrabalho, confusão nas equipes e paralisia decisória. As reuniões estratégicas se estendem por horas, focando excessivamente em criar apresentações perfeitas, enquanto questões práticas permanecem sem resolução efetiva.
+
+Principais pontos de destaque:
+• Conflito entre culturas organizacionais (velocidade vs. perfeição)
+• Falta de cronogramas e direcionamentos claros
+• Reuniões longas e improdutivas
+• Retrabalho devido a decisões revertidas
+• Pressão excessiva por resultados imediatos
+• Busca pela perfeição causando paralisia operacional
+• Ausência de processos decisórios eficientes</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 12;">
+                    <details>
+                        <summary class="cluster-name">Desafios Operacionais Pós-Integração Sistemas</summary>
+                        <div class="cluster-content">Resumo do Cluster "Desafios Operacionais Pós-Integração Sistemas"
+
+Este cluster retrata os principais desafios enfrentados após a integração de duas empresas (Suzano e MMC/KC), com foco especial nas dificuldades operacionais e sistêmicas. O cenário central é marcado pela necessidade de operar simultaneamente em dois sistemas diferentes, gerando complexidades na gestão de dados, processos e rotinas diárias.
+
+A integração trouxe desafios significativos em múltiplas dimensões, desde aspectos técnicos até questões culturais e organizacionais. Os funcionários enfrentam dificuldades com a falta de documentação clara, dependência de conhecimento tácito, e necessidade de adaptação a novos procedimentos, enquanto mantêm as operações em andamento.
+
+Principais pontos de destaque:
+
+• Duplicidade de sistemas: necessidade de operar simultaneamente em dois ambientes diferentes, gerando retrabalho e complexidade nas análises
+
+• Problemas de documentação e conhecimento: processos não documentados e dependência excessiva do conhecimento individual das pessoas
+
+• Desafios de integração entre equipes: falta de clareza sobre papéis e responsabilidades entre áreas diferentes
+
+• Questões de capacitação: necessidade de treinamento e adaptação das equipes aos novos sistemas e processos
+
+• Governança e processos: dificuldades na padronização de procedimentos e estabelecimento de fluxos claros
+
+• Comunicação: barreiras na troca de informações entre times corporativos e industriais
+
+• Gestão de dados: problemas com qualidade e integração de dados entre os sistemas
+
+• Burocracia: processos morosos e complexos no suporte e atendimento às demandas</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 2;">
+                    <details>
+                        <summary class="cluster-name">Boletos e Análises Travando</summary>
+                        <div class="cluster-content">Resumo do Cluster "Boletos e Análises Travando"
+
+Este cluster evidencia problemas operacionais significativos relacionados principalmente a falhas em sistemas críticos e processos de gestão financeira. O ponto mais crítico foi a interrupção por um mês na geração de boletos via MMC no sistema Professional, causando uma cascata de problemas que afetou tanto a operação interna quanto o relacionamento com clientes.
+
+Os impactos negativos se manifestaram em múltiplas frentes:
+
+• Retrabalho significativo das equipes
+• Aumento de inadimplência devido à não geração de boletos
+• Bloqueio de pedidos de clientes
+• Necessidade aumentada de intervenção gerencial
+• Problemas na análise de clientes devido ao travamento do sistema SENA
+• Instabilidade no ambiente MMC, exigindo reinstalações frequentes
+• Dificuldades no processo de devolução de produtos e dispensers
+
+O cenário retratado sugere uma situação de instabilidade sistêmica que afeta processos cruciais do negócio, desde a geração de documentos financeiros até a análise de clientes, demandando soluções urgentes para normalizar as operações e restaurar a eficiência dos processos.</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 6;">
+                    <details>
+                        <summary class="cluster-name">Autonomia vs Comando Compartilhado</summary>
+                        <div class="cluster-content">Este cluster aborda o contraste entre os modelos de gestão e tomada de decisão da Suzano e da Kimberly-Clark (KC) durante o processo de transição entre as empresas. O tema central gira em torno da autonomia versus comando compartilhado, evidenciando as diferenças culturais entre as duas organizações.
+
+A Suzano se caracteriza por uma cultura de maior autonomia e "senso de dono", onde os colaboradores são incentivados a tomar decisões independentes e assumir responsabilidades, mesmo em níveis hierárquicos mais baixos. Em contrapartida, a KC tinha uma cultura de decisões mais compartilhadas e centralizadas, com processos mais estruturados e documentados. Esta diferença está gerando desafios de adaptação para os ex-funcionários da KC.
+
+Principais pontos de tensão e adaptação:
+
+• Processos de Marketing: Necessidade de clareza sobre estratégias de preço e portfólio de marcas
+• Gestão financeira: Preocupações com pagamentos de verbas DSV e acordos de rebate
+• Cultura organizacional: Transição de um modelo de comando compartilhado para maior autonomia individual
+• Estrutura hierárquica: Impacto emocional do rebaixamento de cargos, mesmo sem perdas financeiras
+• Velocidade vs. Organização: Contraste entre a agilidade da Suzano e a necessidade de processos mais estruturados
+• Verbas e investimentos: Diferenças nas políticas de investimento em marketing e ponto de venda entre as empresas</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 10;">
+                    <details>
+                        <summary class="cluster-name">Dúvidas Financeiras Atrasam Decisões</summary>
+                        <div class="cluster-content">Resumo do Cluster "Dúvidas Financeiras Atrasam Decisões"
+
+Este cluster evidencia uma problemática central relacionada à falta de clareza e acesso a informações financeiras cruciais, que está impactando significativamente os processos decisórios e a rotina operacional após uma aparente fusão ou migração de sistemas entre Suzano e KC.
+
+Os colaboradores enfrentam dificuldades substanciais na análise de rentabilidade de clientes e produtos, principalmente devido à mudança nos parâmetros de avaliação (de GP para novos indicadores de ROL/ton) e à falta de referenciais claros sobre o que constitui um bom desempenho. Esta situação é agravada pela dependência de informações externas e sistemas ainda não totalmente integrados.
+
+Principais pontos de impacto:
+- Atrasos na tomada de decisão devido à insegurança sobre métricas de rentabilidade
+- Dificuldade no acesso a relatórios básicos de faturamento e resultados
+- Falta de clareza em processos internos como criação de códigos e formação de preços
+- Dependência de terceiros (ex-KC) para acesso a informações básicas
+- Necessidade de melhor documentação e treinamento sobre novos processos
+- Impacto no acompanhamento de metas e análise de desempenho de marcas
+- Estresse adicional na rotina de trabalho devido à falta de autonomia informacional</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 8;">
+                    <details>
+                        <summary class="cluster-name">Pressa Gera Retrabalho Desnecessário</summary>
+                        <div class="cluster-content">Resumo do Cluster "Pressa Gera Retrabalho Desnecessário"
+
+Este cluster aborda as consequências negativas da pressa excessiva e da falta de planejamento no ambiente de trabalho. O tema central revela como a urgência mal administrada e decisões precipitadas podem resultar em ineficiência operacional e desperdício de recursos.
+
+A análise dos relatos indica que existe uma cultura de urgência que nem sempre se justifica, onde pedidos são tratados como prioritários sem necessidade real. Esta dinâmica, combinada com ansiedade e medo, leva a um ciclo de retrabalho e duplicação de esforços, além de causar frustração nas equipes quando materiais e informações preparados são descartados devido a mudanças repentinas de direção.
+
+Principais pontos identificados:
+- Tomadas de decisão apressadas gerando retrabalho
+- Medo e insegurança levando à duplicação de tarefas
+- Urgências artificiais causando desarranjos na rotina
+- Desperdício de recursos devido a mudanças bruscas de direção
+- Necessidade de equilíbrio entre velocidade e planejamento
+- Impacto negativo na motivação das equipes quando há desperdício de esforços
+- Importância do planejamento adequado para evitar falsas urgências</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 3;">
+                    <details>
+                        <summary class="cluster-name">Culturas Corporativas em Conflito</summary>
+                        <div class="cluster-content">Resumo - Culturas Corporativas em Conflito
+
+Este cluster evidencia um contraste marcante entre as culturas organizacionais da Suzano e da Kimberly-Clark, destacando principalmente suas diferentes abordagens no relacionamento com stakeholders e na condução dos negócios.
+
+A principal divergência se manifesta no estilo de gestão e relacionamento: enquanto a Suzano demonstra uma postura mais impositiva em suas relações comerciais, a Kimberly-Clark adota uma abordagem mais colaborativa. Esta diferença fundamental gerou tensões visíveis, chegando ao ponto de haver manifestações críticas e depreciativas por parte das lideranças da Suzano em relação aos métodos de trabalho da Kimberly-Clark.
+
+Pontos-chave:
+• Contraste nos escopos de atuação dos parceiros entre as duas empresas
+• Diferença filosófica na abordagem de relacionamentos comerciais (imposição vs. colaboração)
+• Manifestações de conflito cultural através de críticas e piadas
+• Melhor ambiente nas relações internas do que nas interfaces entre as empresas
+• Evidência de choque entre culturas corporativas distintas</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 4;">
+                    <details>
+                        <summary class="cluster-name">Dependência Operacional do GSG</summary>
+                        <div class="cluster-content">Resumo - Dependência Operacional do GSG
+
+Este cluster evidencia uma forte dependência operacional das áreas de RH, especialmente dos BPs (Business Partners), em relação à área GSG (Gestão de Sistemas e Governança). O GSG é descrito como uma área crucial que centraliza o controle de acessos, sistemas e informações necessárias para movimentações de pessoas dentro da organização.
+
+A dependência excessiva do GSG gera diversos gargalos operacionais, principalmente devido ao alto tempo de resposta (SLA) e à necessidade de intervenção manual em diversos processos. Os BPs relatam ter pouca autonomia e precisam constantemente solicitar e cobrar ações das áreas especialistas, o que impacta diretamente nos prazos de atendimento ao negócio.
+
+Principais pontos de dependência e impactos:
+- Criação de postos de trabalho
+- Acesso a histórico de movimentações de colaboradores
+- Liberação de upgrades de posição
+- Alterações de estrutura em sistema
+- Atrasos nos processos devido ao alto SLA
+- Necessidade de acompanhamento constante das solicitações
+- Impacto na agilidade do atendimento ao negócio
+- Excesso de processos manuais</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 9;">
+                    <details>
+                        <summary class="cluster-name">Processos RH Em Evolução</summary>
+                        <div class="cluster-content">Resumo do Cluster 'Processos RH Em Evolução'
+
+Este cluster aborda a necessidade de atualização e aprimoramento dos processos de Recursos Humanos em uma organização em transformação. O tema central gira em torno da gestão da mudança nos procedimentos de RH e a necessidade de maior clareza e eficiência nos processos.
+
+Os principais pontos de atenção incluem a necessidade de capacitação da equipe em novos processos de gestão de pessoas, o benchmarking com práticas da Kimberly para possíveis melhorias, e o desejo por regras e procedimentos mais bem definidos para reduzir a necessidade de discussões e reuniões excessivas.
+
+Pontos-chave:
+• Necessidade de atualização da equipe em processos fundamentais como:
+  - Processo de Seleção
+  - Avaliação de Desempenho
+  - Gestão da folha de pagamento
+
+• Oportunidades de melhoria identificadas:
+  - Implementação de sistema de chamados para folha de pagamento
+  - Criação de plantões de dúvidas para colaboradores
+  - Benchmark com processos da Kimberly
+  - Redefinição do papel do BP (Business Partner)
+
+• Desafios a serem endereçados:
+  - Estabelecimento de regras e procedimentos mais claros
+  - Reestruturação das reuniões estratégicas
+  - Melhor definição dos papéis e responsabilidades</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 1;">
+                    <details>
+                        <summary class="cluster-name">Medo de Conflitos Profissionais</summary>
+                        <div class="cluster-content">Este cluster retrata um ambiente organizacional marcado por tensões e medos relacionados a conflitos profissionais, principalmente no contexto de uma integração entre culturas empresariais diferentes (aparentemente após uma aquisição ou fusão envolvendo uma empresa chamada KC).
+
+O tema central gira em torno da insegurança psicológica, manifestada de diversas formas: medo de expressar opiniões, receio de dar feedbacks negativos, ansiedade após desligamentos, e dificuldade em lidar com cobranças e pressões. Há um claro contraste entre uma cultura mais direta e acelerada de um lado, e uma mais cautelosa e reservada de outro, gerando interpretações equivocadas e desconfortos nas interações profissionais.
+
+Principais manifestações do medo de conflitos:
+- Insegurança após processos de desligamento, afetando a confiança na liderança
+- Relutância em discordar ou expressar opiniões em reuniões
+- Interpretação de transparência como agressividade
+- Dificuldade em dar e receber feedbacks negativos
+- Risco de perda de talentos devido ao ambiente de pressão
+- Choque entre diferentes culturas organizacionais na forma de lidar com conflitos
+- Tensão entre a necessidade de acelerar resultados e o impacto emocional nas equipes</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 11;">
+                    <details>
+                        <summary class="cluster-name">Burocracia entre Duas Casas</summary>
+                        <div class="cluster-content">Resumo - "Burocracia entre Duas Casas"
+
+Este cluster aborda os desafios operacionais e culturais enfrentados durante o processo de fusão entre Suzano e MMC. O tema central gira em torno das dificuldades burocráticas, diferenças nos processos decisórios e a complexidade de gerenciar duas estruturas organizacionais simultaneamente durante o período de transição.
+
+Um dos principais pontos é a tensão entre a vontade de integração rápida e a necessidade de cautela nos processos. Enquanto existe um desejo de "derrubar muros" entre as empresas e unificar operações, há preocupações com riscos operacionais e necessidade de manter certas separações temporárias. Isso se manifesta especialmente na diferença de velocidade e burocracia entre as duas empresas, com Mogi (MMC) apresentando processos mais lentos e burocráticos em comparação com a Suzano.
+
+Principais desafios identificados:
+• Carga de trabalho intensa durante o período de fusão
+• Diferenças nos processos decisórios entre as duas empresas
+• Complexidade na gestão de relatórios e informações separadas
+• Burocracia mais acentuada em certas unidades (especialmente Mogi)
+• Necessidade de equilibrar velocidade de integração com gestão de riscos
+• Dificuldade em manter todos os colaboradores alinhados e incluídos no processo</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid 0;">
+                    <details>
+                        <summary class="cluster-name">Celebrar Conquistas e Reconhecer</summary>
+                        <div class="cluster-content">Resumo do Cluster "Celebrar Conquistas e Reconhecer"
+
+Este cluster evidencia uma necessidade significativa de fortalecer a cultura de celebração e reconhecimento na Suzano. Os depoimentos convergem para uma percepção comum de que a empresa ainda celebra menos do que deveria, sendo esta uma área que merece atenção especial, principalmente no contexto pós-integração.
+
+Um ponto crítico destacado é a tendência de passar rapidamente de uma ação para outra sem fazer as devidas pausas para celebração e reflexão. Esta dinâmica não apenas prejudica o reconhecimento adequado das pessoas, mas também compromete oportunidades valiosas de aprendizagem organizacional e validação cultural, especialmente importante para novos colaboradores.
+
+Pontos-chave:
+- Necessidade de mais momentos de celebração e reconhecimento
+- Importância da pausa para reflexão e aprendizagem entre ações
+- Relevância do reconhecimento para a validação na cultura organizacional
+- Celebração como ferramenta de integração e fortalecimento cultural
+- Reconhecimento não necessariamente precisa ser grandioso, mas deve ser consistente e significativo</div>
+                    </details>
+                </div>
+        
+                <div class="cluster-summary" style="border-left: 4px solid Outlier;">
+                    <details>
+                        <summary class="cluster-name">Outlier</summary>
+                        <div class="cluster-content">Resumo do Cluster 'Outlier'
+
+Este cluster aborda a questão crítica da governança e liderança em iniciativas estratégicas corporativas, especificamente no contexto de desenvolvimento de novas categorias. O ponto central destaca um problema comum em organizações: a duplicação de esforços quando múltiplas áreas trabalham simultaneamente no mesmo projeto sem uma coordenação clara.
+
+O texto enfatiza a importância de estabelecer uma estrutura de liderança definida desde o início de qualquer iniciativa estratégica, com os seguintes pontos-chave:
+
+• Necessidade de consolidação de esforços em uma única frente coordenada
+• Importância de definir claramente a área líder no início do projeto
+• Reconhecimento da participação multi-departamental, mas com hierarquia clara
+• Eliminação da redundância de três áreas liderando simultaneamente
+
+A mensagem principal é que, embora diferentes departamentos possam contribuir com suas perspectivas únicas, deve haver uma única área designada como líder para garantir uma coordenação eficaz e evitar ineficiências organizacionais.</div>
+                    </details>
+                </div>
+        
+            <div class="section">
+                <h2>Dados Detalhados</h2>
+                <div class="table-container">
+                    <table border="1" class="dataframe styled-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Label</th>
+      <th>Description</th>
+      <th>Cluster</th>
+      <th>Cluster_Assignments</th>
+      <th>Área origem</th>
+      <th>Entrevista</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ausência de integração de sistemas de RH prejudica informações confiáveis</td>
+      <td>Falta informações confiáveis devido a ausência de integração de sistemas de RH</td>
+      <td>5</td>
+      <td>C5(33.0%)</td>
+      <td>Comercial</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A pressão da integração e a falta de direcionamento claro</td>
+      <td>A integração aumentou a pressão para que tudo fosse resolvido para ontem e gerou ruídos de pontos que antes eram<br>claros e alinhados para todos. Sem direcionamento claro de tempos e movimentos, tudo para ontem. Nao existe um cronograma de<br>trabalho alinhado com todos e qualquer ponto de oportunidade ou issue de outra área passa pela área aqui para resolver.<br>Falta um cronograma alinhado de trabalho. Exemplo: oportunidade de volume, sinergia (estudo da accenture) versus outras frentes.</td>
+      <td>7</td>
+      <td>C7(100.0%)</td>
+      <td>Comercial Consumo</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na integração de dados e burocracia no suporte</td>
+      <td>Alguns processos precisamos entender e procurar diversas pessoas para conseguir alguma informação e na virada de mês Junho de integração<br>alguns dados e bases não recebemos de maneira correta da KC, impactando em retrabalhos e atividades que realizamos para regularizar<br>bases que deveriam chegar corretas para a gente na integração. Hoje pós os primeiros meses, em setembro, o fluxo e<br>as atividades estão mais organizadas. O atendimento do suporte na Costa Rica gera muita burocracia e tem prazos muito logos<br>vs a realidade e momento de negocio que precisamos.</td>
+      <td>12</td>
+      <td>C12(17.5%); C10(21.7%)</td>
+      <td>Comercial Consumo</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Problemas com geração de boletos causam retrabalho e insatisfação</td>
+      <td>Ficamos 1 mês sem a geração de boletos via MMC em Professional e isso acabou acarretando muito retrabalho da equipe,<br>insatisfação junto a nossos clientes e também uma necessidade de maior interação da Gerencia nos casos de bloqueio dos pedidos<br>dos clientes por falta de pagamento. Os boletos voltaram a serem emitidos na semana passada, porém ainda tinham muitos clientes<br>em situação inadimplente por este motivo e que acabaram tendo seus pedidos bloqueados. Com a falta de pagamento, a cobrança<br>e bloqueios dos pedidos dos clientes aumentaram, gerando grandes desgastes e também a necessidade de intervenção tanto do vendedor, quanto<br>da Gerencia na liberação dos pedidos.</td>
+      <td>2</td>
+      <td>C2(100.0%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Plano de Marketing para marcas de Suzano: estratégia e competitividade</td>
+      <td>Sobre processos de Marketing, gostaria de ter um Plano mais claro se as marcas de Suzano, como Mimmo e Max<br>Pure serão abertas para venda em Professional, bem como qual sera a estratégia de preços. Estamos num momento de muita<br>pressão dos nossos clientes por preços melhores e a concorrência esta se estruturando e atacando forte nossa base. Ter alternativas<br>de migração ou incremento de mix dentro do portfólio, acredito que sim traria mais competitividade a nossa divisão e nos<br>daria mais espaço para crescer e aumentar a entrega em toneladas. Sobre Revenue, ainda não entendi se temos uma meta<br>de valor adicional com aumento de preços nos clientes de professional para entregar ainda este ano, como tinhamos em KC<br>ou se a eficiencia na execução sera medida atrás da melhora do rol/ton nos clientes que estão com este indicador<br>abaixo da média."</td>
+      <td>6</td>
+      <td>C6(35.7%); C3(17.8%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Análise de clientes e tomada de decisão prejudicadas pela falta de clareza</td>
+      <td>A análise dos clientes, tanto para reajustes quanto para defesa em caso de ataques da concorrência, acabou ficando mais lenta.<br>A falta de uma claridade de qual rol/ton por produto entrega uma boa margem de contribuição deixa aequipe insegura quanto<br>a tomada de decisão.</td>
+      <td>10</td>
+      <td>C10(100.0%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na análise de clientes e problemas com o ambiente de trabalho</td>
+      <td>O que gostaria que fosse diferente? Que tivéssemos rapidamente um DE:PARA da forma como analisamos os clientes e assim a<br>informação pudesse ser compartilhada sem gerar tantas dúvidas. O que ainda não esta funcionando bem é trabalhar no ambiente MMC,<br>além de travar a visualização de uma importante ferramenta que usamos para análise de cliente (SENA), também atualiza com frequencia<br>e acabo perdendo tempo reiniciando a máquina e instalando o pacote office novamente. Acredito que sera corrigido em Nov.</td>
+      <td>2</td>
+      <td>C2(100.0%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Impactos processuais na rotina: desafios na análise de rentabilidade</td>
+      <td>Impactos processuais na rotina: com relação a rotina, o que sinto que mais afetou e afeta minha rotina são a<br>nova forma de ver o business. Estávamos acostumados a classificar um cliente como rentável ou não rentável através do GP,<br>com a migração, a visualização do GP tem gerado dúvidas quanto a forma de cálculo e identificar se um produto<br>ou cliente esta saudável se tornou mais difícil. Só agora no final do mês de Agosto estamos tendo mais informações<br>sobre as novas nomenclaturas de rol/ton, porém ainda sem muito entendimento se o atual rol/ton do cliente é bom ou<br>ruim, visto que o balizador é a média.</td>
+      <td>10</td>
+      <td>C10(100.0%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Preocupação com pagamentos de verbas DSV e acordos de rebate</td>
+      <td>Tenho um ponto de preocupação sobre os pagamentos de verbas DSV e acordos de rebate para clientes de Professional. Tenho<br>buscado incessantemente mais detalhes deste processo para que possa abastecer o time de Suzano e assim não deixar o tramite<br>parar após a saida do GBS, porém recebo do GBS informações muito vagas e superficiais e temo que este processo<br>afete nossa relação comercial com o cliente, caso não seja feita um handover correto. Tenho de 1 a 2 reuniões<br>com os 2 principais clientes no qual temos este processo (Accor e Sodexo) por semana. Eles estão preocupados de como<br>vai funcionar a apuração, lançamento e continuidade dos pagamentos com a Suzano. Sinto também uma preocupação dos clientes acerca do<br>que esta pendente ainda como Kimberly, visto que a transição já ocorreu e não temos os devidos retornos por parte<br>de Kimberly sobre estas pendencias.</td>
+      <td>6</td>
+      <td>C6(44.8%)</td>
+      <td>Comercial Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Os problemas do retrabalho causados por decisões rápidas e medo</td>
+      <td>Eu acho que, assim, por conta de uma tomada de decisão rápida, de uma agilidade muito rápida, as pessoas geram<br>muito retrabalhos, as pessoas acabam fazendo as mesmas coisas porque talvez tenha medo de que o outro não faça.</td>
+      <td>8</td>
+      <td>C8(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>A importância da velocidade e do planejamento no trabalho</td>
+      <td>a velocidade é importante, mas o mínimo de planejamento é fundamental</td>
+      <td>8</td>
+      <td>C8(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A falta de alinhamento gera confusão e retrabalho nas equipes</td>
+      <td>aparentemente as pessoas têm autonomia, tomam decisões, depois alinham com seus líderes e voltam atrás em vários temas, gerando confusão<br>e retrabalho para as equipes</td>
+      <td>7</td>
+      <td>C7(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Atrapalhos causados por pedidos urgentes e falta de planejamento</td>
+      <td>os pedidos urgentes que atrapalham a rotina, muitas vezes ocorrem pedidos de coisas que são urgentes e faltou planejamento, ou<br>de coisas que não são tão urgentes assim, mas por algum motivo fazemos a entrega virar para ontem. a solução<br>ée planejamento e menos ansiedade de coisas que nem são urgentes saírem para ontem.</td>
+      <td>8</td>
+      <td>C8(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A carga operacional e a integração com a KC</td>
+      <td>Enfim, a carga operacional é bastante alta, mas vejo que não é só por conta da integração, sempre tivemos este<br>modelo. Com a vinda da KC podemos melhorar.</td>
+      <td>5</td>
+      <td>C5(19.4%); C4(20.5%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios operacionais e dependência no Processo de Negócios</td>
+      <td>Além do mais, o PN tem uma carga operacuinal muito alta de processos que não estão muito maduros e que<br>causam muita dependência do time do GSG.</td>
+      <td>5</td>
+      <td>C5(21.1%); C4(24.2%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Comparação dos escopos de parceiro em duas empresas</td>
+      <td>Diferenças entre os escopos de parceiro desempenhados nas duas empresas</td>
+      <td>3</td>
+      <td>C3(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Importância da área GSG para movimentações e acesso a informações</td>
+      <td>A gente tem uma área chamada GSG, que é uma área super importante para que a gente consiga fazer todas<br>as movimentações de pessoas dentro das estruturas da organização. E essa área, ela detém ali todo o acesso a sistemas,<br>todo o acesso a informações importantes para que a gente consiga construir uma proposta que faça sentido para a vida<br>de cada colaborador quando a gente vai fazer movimentos. Então, assim, é tudo muito manual.</td>
+      <td>4</td>
+      <td>C4(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desafios na gestão de processos e dados nas empresas</td>
+      <td>Processos estão na pessoas e isso torna frágil a credibilidade dos dados, além de moroso e com muitos retrabalhos. Sinto<br>dificuldades em resolver problemas do dia a dia, a interface não é clara de onde começa e termina entre as<br>áreas. Exemplos incluem a) Processo de transferência e mudança de colaboradores, não temos um sistema para consultar as informações b)<br>entendo que temos oportunidade com uma plataforma integrada. c) excesso de planilhas com dados desatualizados.</td>
+      <td>12</td>
+      <td>C12(14.9%); C9(20.8%); C10(18.1%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Dúvidas dos gestores sobre controle de jornada no Apdata</td>
+      <td>Creio que o fato de existir dois sistemas que seguem processos e fluxos diferentes. Gestores questionam sobre controle de jornada<br>e demais temas que não estão claros sobre como funciona no apdata.</td>
+      <td>12</td>
+      <td>C12(26.2%); C11(22.7%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Equipe precisa se atualizar sobre processos de gestão de pessoas</td>
+      <td>A equipe não conhece os novos processos de gestão de pessoas. Processo de Seleção, Avaliação de Desempenho, abertura de chamados<br>de folha de pagamento. Poderíamos ter abertura de chamados de folha de pagamento, oferecer plantões de dúvidas aos colaboradores.</td>
+      <td>9</td>
+      <td>C9(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Argumentos questionáveis para promoção baseada em tempo de casa</td>
+      <td>Quando a gente vai fazer alguma movimentação com um colaborador, tem dois argumentos que eles trazem para defender uma movimentação,<br>que para mim não faz o menor sentido, e daí eu já estou estressada com isso também. Porque eu já<br>estou dois meses falando, falando, falando. Mas assim, um, tem uma vaga aberta. Vamos promover esse colaborador, porque ele tem<br>20 anos de Kimberly Clark. Aí eu fico... Interessante. É, assim, porque tempo de casa é muito diferente, né? De<br>senhoridade, de potencial, de desempenho, de performance, é muito diferente. Então, o que eu sempre trago para eles é, gente,<br>ok, ótimo, que maravilhoso a jornada do colaborador, parabéns para ele, mas é a melhor pessoa em termos de potencial<br>para sentar nessa cadeira? Então, assim, bem complicado isso.</td>
+      <td>5</td>
+      <td>C5(29.6%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Dificuldades de acesso ao treinamento e sistema de novembro</td>
+      <td>Acho que eles cobram muito também ter acesso ao treinamento, ao nosso sistema de treinamento, só que isso a gente<br>só vai conseguir mesmo para novembro, então é uma coisa que eles reclamam bastante, de, ah, a gente não... Porque<br>a TI falou que precisa do número pessoal para vincular o nosso sistema, e eles não têm esse NP, né,<br>precisa estar no sistema Suzano mesmo para conseguir liberar o acesso, quando é de outra empresa a gente não consegue,<br>precisa fazer muito manual, e daí gera uma complexidade tão grande que para tudo que a gente tem que entregar<br>nesse momento que é mais crítico, isso acabou caindo de priorização, entendeu? Então vai ser só novembro.</td>
+      <td>12</td>
+      <td>C12(34.8%); C11(19.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>A dependência das áreas especialistas no dia a dia</td>
+      <td>Porque eu acho que como BP a gente tem pouca autonomia e a gente depende muito das áreas de expertise,<br>as áreas especialistas. Então, qualquer coisa que eu preciso gerar em sistema, criar em sistema, de, por exemplo, vou rodar<br>uma movimentação, eu preciso dessa área especialista. E às vezes o meu prazo para atender o negócio é muito diferente<br>da área especialista. Então, eu tenho que ficar fazendo um trabalho operacional, de além de pedir tudo para eles, ficar<br>cobrando de um em um segundo para que as coisas sejam liberadas e eu consiga lançar em sistema. Então, eu<br>acho que essa dependência das nossas áreas especialistas como RH no dia a dia é muito ruim.</td>
+      <td>4</td>
+      <td>C4(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Falta de confiança após desligamentos e incertezas na liderança</td>
+      <td>Eles (da KC) não têm muita confiança, porque, por exemplo, a gente teve os desligamentos do time, aí depois dos<br>desligamentos o head aqui da unidade, chamou todos os líderes para falar, gente, finalizamos os desligamentos, vamos passar um risco<br>no chão, bola para frente, quem está aqui está, e vamos continuar screvendo a nossa história. E daí, no dia<br>seguinte, a gente ia ter um team building com a liderança, os líderes me falaram que eles nem dormiram, e<br>que eles estavam pensando que o dia do desligamento da liderança ia ser no dia seguinte. Então, assim, parece que<br>eles ainda não confiaram.</td>
+      <td>1</td>
+      <td>C1(45.1%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Dificuldade em dar feedback negativo e discordar em reuniões</td>
+      <td>Se a gente precisar fazer uma conversa difícil, dar um feedback negativo pra alguém, puxar mais, eu acho que eles<br>(ex-KC) têm dificuldade, tanto é que entre eles mesmos, entrar em reunião, é difícil eles ficarem discordando de algum processo,<br>de alguma pessoa, de alguma... porque às vezes eu acho que eles levam muito assim, ah, talvez se eu falar,<br>eu vou ser reativo, eu vou estar chateando a pessoa, então eles têm um pouco de dificuldade nisso.</td>
+      <td>1</td>
+      <td>C1(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desafios na gestão de demanda e responsabilidades em empresas</td>
+      <td>Excesso de demanda por não haver priorização das atividades e tempo para planejamento, devido a "rapidez" ser o modus operandi<br>cultural. processo de afastamento/atestados de colaboradores, time MMC e Suzano com dificuldade de direcionar. Temas com dificuldade de saber quem<br>é responsável ex: contratação de temporários</td>
+      <td>12</td>
+      <td>C12(22.8%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A importância de desconstruir a crença da liderança centralizada</td>
+      <td>precisa ser trabalhada a crença da liderança que fazer gestão do time é papel dos PNs</td>
+      <td>5</td>
+      <td>C5(22.8%); C4(23.6%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Falta de integração entre times industrial e corporativo: soluções possíveis</td>
+      <td>falta integração entre os times do industrial e corporativo, um espaço de trocas, de saber o que está acontecendo. ver<br>as mensagens no whats fica superficial. Poderíamos compartilhar mais entre nós e com detalhes as várias ações que estão sendo<br>feitas, além de aproveitar para ter mais sinergia, talvez através de momentos de trocas entre as equipes. Poderíamos criar rituais/encontros<br>com pautas para serem compartilhadas e quem tiver realizando algo naquela ocasião pode apresentar mais detalhes. Exemplo: Apresentar um projeto<br>que acabou de ser implementado, ou será implementado. Outro exemplo: Contar como foi o processo até chegar no Dia D<br>(poderia gerar muitos aprendizados para o grupo).</td>
+      <td>12</td>
+      <td>C12(47.8%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na divulgação de vagas com duas plataformas</td>
+      <td>Atração de talentos passou a ser mais complicado, pois não conseguimos divulgar as vagas em sistema, visto que estamos operando<br>com duas plataformas.</td>
+      <td>5</td>
+      <td>C5(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Dependência excessiva do time do GSG prejudica processos operacionais</td>
+      <td>Ainda ficamos muito dependentes do time do GSG para nos passar qualquer informação operacional que nos ajude a destravar os<br>processos. O SLA (tempo de espera do retorno) é muito alto, por isso, ficamos com os processos parados. Dependemos do<br>GSG para tudo: criação de posto de trabalho, olhar quando foi a ultima movimentação do colaborador, liberar upgrade de posição,<br>mudar estrutura em sistema, entre outras coisas.</td>
+      <td>4</td>
+      <td>C4(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Análise dos processos de RH na Kimberly para melhorias</td>
+      <td>Podemos entender os processos de rh que existiam na kimberly para tentarmos melhorar os nossos e criar uma terceira versão<br>possível. Precisamos entender qual era o papel do BP na Kimberly e como os processos que são operacionais aqui eram<br>realizados por lá.</td>
+      <td>9</td>
+      <td>C9(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na integração de processos e sistemas em empresas</td>
+      <td>Vejo que identificar as similaridades e diferenças entre os processos das suas empresas segue em evolução e faz parte do<br>momento. Vejo que temos muitas frentes de atuação e sinto que podemos ponderar melhor as ações para que tenhamos uma<br>governança melhor dos temas e tempo para absorver as informações. Exemplo, conhecer os fluxos e processos de Gente e Gestão,<br>as frentes de atuação, fluxo de jornadas e sistemas. Como estamos lidando com dois sistemas ao mesmo tempo, Suzano e<br>MMC enquanto estamos no processo de integração de ambos, alguns pontos como a movimentações de profisisonais, transferências e fluxos mais<br>operacionais, podem ter seu SLA afetado.</td>
+      <td>12</td>
+      <td>C12(100.0%)</td>
+      <td>Gente & Gestão</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Dificuldades na operação de processos e falta de informação</td>
+      <td>alguns processos ainda estão funcionando como MMC, mas há muitas dúvidas sobre como eles são operados na Suzano... toda vez<br>que tenho dúvidas tenho que buscar informações... não há nada para consultar, documentos, instruções ou algo do tipo, a informação<br>estão nas pessoas e isso dificulta o aprendizado. Um exemplo é criação de códigos, não sabemos como fazer, não está<br>claro as ferramentas e sistemas e critérios para criação de novas marcas e profit centers. Isso demandou várias reuniões com<br>diferentes áreas para entendimento de como operacionalizar e com isso, aumento no prazo de conclusão das tarefas... algo que poderia<br>ser simples vem tomando mais tempo que o o necessário pela falta de informação.</td>
+      <td>12</td>
+      <td>C12(19.5%); C11(21.4%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A agilidade da Suzano e a falta de organização</td>
+      <td>A agilidade da Suzano tem um lado ruim que é curto prazo extremo, que não documentam ou organizam os processos.<br>Em marketing estão aprendendo pouco com a cultura da KC.</td>
+      <td>6</td>
+      <td>C6(25.8%); C3(16.8%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desafios e aprendizados na capacitação do novo time</td>
+      <td>Acredito que ensinar diversos pontos de excel, automatização, e alguns itens bastante básicos que não estavam inseridos no dia a<br>dia do pessoal que chegou da KC. Contudo, o time recebido aprendeu super rápido diversos pontos, porém ainda sinto falta<br>de alguns pensamentos a longo prazo, por exemplo: existem materiais que são atualizados todo mês, materiais dificeis, e o novo<br>time acaba sempre dependendo das análises do time antigo para conseguir seguir.</td>
+      <td>12</td>
+      <td>C12(14.9%); C9(22.0%); C10(16.4%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A carga de trabalho intensa na Suzano: um desafio persistente</td>
+      <td>Um tema que é muito forte na Suzano, que é a carga de trabalho. Aqui tem o lance do forte,<br>gentil, e eles têm essa questão da startup de 100 anos e tudo mais, é natural, a gente está há<br>dois meses e meio, então é natural essa carga excessiva de trabalho no começo de uma fusão. Eu tenho medo<br>de que isso se estenda</td>
+      <td>11</td>
+      <td>C11(38.6%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Risco de retenção de equipe em mercado aquecido</td>
+      <td>Se tiver que sustentar um time motivado e com alta carga de trabalho durante meses, começa a ter risco de<br>retenção. Pessoas boas podem sair, porque o mercado está super aquecido.</td>
+      <td>1</td>
+      <td>C1(100.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>A importância de celebrar e reconhecer na Suzano</td>
+      <td>Acho que a gente tem que celebrar mais. Acho que a gente celebra pouco ainda na Suzano. Isso até antes<br>da integração já era uma dor. O real que a gente tem que ter atenção, assim, de reconhecer e celebrar.</td>
+      <td>0</td>
+      <td>C0(100.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Problemas decorrentes da falta de entendimento das áreas envolvidas</td>
+      <td>Há um processo que envolve 4 áreas: estratégia e marketing, trade marketing, inteligência comercial e comercial. Estratégia é definida pelo<br>primeiro. Trade marketing cascateia a estratégia para o ponto de venda. Inteligência comercial trazem insights bem micro e implementam com<br>o time comercial. Esse o escopo geral, mas acontecem vários problemas pelo não entendimento das responsabilidades das áreas.</td>
+      <td>12</td>
+      <td>C12(15.6%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Necessidade de clareza e aprendizado em processos internos da empresa</td>
+      <td>muitos processos mudaram e não estão claros... estamos tentando aprender quando chega a demanda e a informação não é acessível<br>e clara a todos. processo de criação de códigos, formação de preços... entre outros. eu acredito que uma alternativa seria<br>ter as instruções de processo devidamente detalhadas para consulta e promover um workshop para esclarecer processos mais críticos.</td>
+      <td>10</td>
+      <td>C10(31.7%); C9(24.4%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Problemas no acesso às informações financeiras: falta de clareza e detalhes</td>
+      <td>O acesso a informações financeiras está prejudicado - não é prazo e sim como estão sendo disponibilizados ...formato ... nível<br>de informação disponível. Exemplo: Análise das marcas; de/para de KC para Suzano; isso nos deixa sem entender o que está<br>"se passando" com os resultados.</td>
+      <td>10</td>
+      <td>C10(100.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Definição de liderança e organização em estratégias de categorias</td>
+      <td>Quando a gente foi fazer a estratégia de novas categorias, vimos que tinham três áreas fazendo, trabalhando na mesma frente.<br>Aí a gente se juntou e foi para uma frente só. Acho que no final cada área vai por o<br>seu ponto, mas tem que ficar claro quem lidera o tema. Acho que cada tema precisa ter um líder, uma<br>área líder, e isso precisa ser definido logo no começo, o líder é essa área, então essa área vai ser<br>responsável por falar com todas e organizar direito, mas não ter três áreas liderando o tema.</td>
+      <td>-1</td>
+      <td>No clusters (< 15.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Rebaixamento de cargos na transição: impactos financeiros e emocionais</td>
+      <td>Algumas pessoas na transição, em termos de nomenclatura, foram rebaixadas. Elas não tiveram perda nenhuma financeira. A Suzano trabalhou um<br>plano super legal em relação à parte financeira, mas em termos de cargos elas foram rebaixadas. E eu acho que<br>tem pessoas ainda digerindo isso. Tem uma pessoa no meu time que me falou que desceu quadrado, é como se<br>ela tivesse voltado na carreira dois, três níveis, nem anos, dois, três níveis.</td>
+      <td>6</td>
+      <td>C6(23.8%); C11(15.5%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Dificuldades e oportunidades na integração de processos entre áreas</td>
+      <td>Tivemos bastante dificuldade pois muitos processos que temos na nossa área não eram olhados pela mesma área deles, dados, análises,<br>etc, o que causou uma certa dependência das análises Suzano. O desafio está sendo lidar um pouco com essa nova<br>rotina de ensinar sobre nossos procedimentos porém vejo muita oportunidade para que nós Suzano possamos aprender também com os integrantes<br>que chegaram agora.</td>
+      <td>12</td>
+      <td>C12(32.5%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>O embate cultural no time da KC: oportunidade ou problema?</td>
+      <td>O time da KC está sentindo essa mudança. Alguns enxergam como oportunidade. Outros acham isso ruim. O processo todo tem<br>esse embate cultural.</td>
+      <td>1</td>
+      <td>C1(58.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>A importância do senso de dono na Suzano</td>
+      <td>Uma dor é senso de dono. A Suzano tem isso muito forte. As pessoas realmente se sentem donas e se<br>sentem empoderadas e elas tomam a decisão. A decisão na KC era muito compartilhada. Então, as pessoas não se sentiam<br>tão donas da decisão e do impacto da decisão. A decisão era muito compartilhada e quando você toma a decisão<br>compartilhada, você compartilha também os riscos. É o ônus e o bônus da coisa.</td>
+      <td>6</td>
+      <td>C6(100.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Unificação do pipeline de projetos de inovação é um desafio</td>
+      <td>Tinha um book de projetos gigante, cada um (área) com um modelo diferente. Registro e evoluções de projeto não tinha<br>nada. Agora tem um PMO ajudando nisso. São projetos de inovação. Professional tinha um pipeline, outras áreas tinham outro. Agora<br>estão unificando essa visualização, mas é um ponto fraco deles.</td>
+      <td>12</td>
+      <td>C12(25.4%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desafios na definição e aprovação de verba de marketing</td>
+      <td>A KC sempre investiu mais em material de ponto de venda, em visibilidade no ponto de venda do que a<br>Suzano, e investia muito mais. E eu acho que eles estão certos de investir mais do que a gente vem<br>investindo. O time me trouxe uma proposta de verba, que era muito mais do que eles faziam lá do que<br>a Suzano faz aqui, que eu acho que não vai ser nem um mundo nem outro. E aí eu pedi<br>para eles uma defesa daquela verba, para realmente a gente conseguir aprová-la. Isso deve ter 20 dias. Até hoje, não<br>veio. E eu já cobrei algumas vezes. Então, eu vou pegar e eu vou fechar a verba do que eu<br>acho que tem que ser. Sabe? Porque não dá para ficar esperando.</td>
+      <td>6</td>
+      <td>C6(100.0%)</td>
+      <td>Marketing & Revenue & Estrategia</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Problemas no processo de devolução de produto e dispenser</td>
+      <td>O processo de devolução de produto e dispenser ainda não está funcionando. Desta forma estamos apoiando o time de devolução<br>para recebermos os dispenser</td>
+      <td>2</td>
+      <td>C2(100.0%)</td>
+      <td>Professional</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>A importância da pausa para celebrar, refletir e aprender</td>
+      <td>Passamos de uma ação para a outra, sem uma pausa para celebrar, refletir e aprender. Como consequência as pessoas não<br>são devidamente reconhecidas e perdemos oportunidades de aprendizagem.</td>
+      <td>0</td>
+      <td>C0(100.0%)</td>
+      <td>Professional</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Reuniões estratégicas de alinhamento e busca pela perfeição</td>
+      <td>Então, há reuniões longas, de quatro horas, que se enviam em reuniões estratégicas de alinhamento, e não há descrição dentro<br>do que se tem que fazer. Então, os que vêm de Kimberly, ao procurar a perfeição, se junta todo o<br>equipo e começa a armar apresentações para responder todas as perguntas e questionamentos possíveis que pode haver aí. Tudo se<br>paralisa até armarmos esta apresentação para a liderança com todas as respostas possíveis. Porque tem que ser perfeito.</td>
+      <td>7</td>
+      <td>C7(100.0%)</td>
+      <td>Professional</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Exigências culturais: velocidade versus perfeição - um desafio constante</td>
+      <td>São duas exigências, duas culturas exigentes, uma pela velocidade e outra pela perfeição, não vai tão rápido como a liderança<br>de Susano gostaria, nem tudo está tão perfeito como a cultura de Kimberly gostaria.</td>
+      <td>7</td>
+      <td>C7(25.2%); C8(24.1%)</td>
+      <td>Professional</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>A importância da validação na nova cultura: reconhecimento necessário</td>
+      <td>Eu acho que se celebram pouco os louros. Não é fazer uma festa de carnaval, apenas reconhecer. Para a gente<br>que está ingressando, a validação na nova cultura é importante.</td>
+      <td>0</td>
+      <td>C0(100.0%)</td>
+      <td>Professional</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Aceleração e ansiedade: o impacto da velocidade no sistema</td>
+      <td>Mas quando engrenar, a gente vai querer botar velocidade. Essa velocidade, ela pode ser interpretada de outras formas do lado<br>de lá. E a nossa ansiedade, cara, de retomar o volume, de botar uma pressão maior no sistema, cara, eu<br>acho que isso assustou a turma. E isso eu acho que assustou os caras, assustou quem chegou, falou assim, puta,<br>esses caras são meio acelerados.</td>
+      <td>1</td>
+      <td>C1(57.6%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desperdício de informações devido a mudanças rápidas de direção</td>
+      <td>As mudanças rapidas estao gerando retrabalhos. O time prepara muitas informações conforme solicitado e rapidamente mudamos de direção e gera<br>uma frustração pela falta de aproveitamento do material e dos temas.</td>
+      <td>8</td>
+      <td>C8(36.6%); C7(25.3%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios de operar dois sistemas e balancear nível de serviço e custo</td>
+      <td>Complexidade de operar dois sistemas, primeiramente manter operativo o sistema MMC e, em paralelo aprender os sistemas suzano. Processo OTC<br>mais moroso e mais complexo na Suzano. Isso trouxe maior carga de trabalho e responsabilidade. processo de custos e transportes.<br>Um exemplo é o acompanhamento do carteira e faturamento em dois BI diferentes. Os desafios são balancear nível de serviço<br>e custo com foco na satisfação do cliente NOC.</td>
+      <td>12</td>
+      <td>C12(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Diferenças na tomada de decisão entre KC e Suzano</td>
+      <td>Lá na KC os caras aguardavam vir o direcional e era meio comando e controle. Aqui (Suzano), você sendo até<br>mesmo um analista, a decisão é mais sua mesmo, sem pedir licença. E eles (KC) não têm isso, eles não<br>têm essa autonomia ainda está. O entendimento ainda não está claro pros caras.</td>
+      <td>6</td>
+      <td>C6(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Derrubando os muros de Suzano e MMC: uma reflexão necessária</td>
+      <td>Eu queria ter derrubado antes os muros de Suzano e MMC, cara, e o que eu chamo de derrubar o<br>muro? É pegar, por exemplo, o analista do meu time que olha as plantas hoje de Belém e Imperatriz e<br>fala, cara, a partir da manhã você vai olhar Mogi e você que olha Mogi, você vai olhar Belém e<br>Imperatriz, é, desse jeito, desse jeito. E tô pra te falar, cara, que eu escutei um próprio feedback dos meus<br>coordenadores que tem tanta coisa acontecendo que deixa, por enquanto, assim, porque é um risco ainda maior da gente fazer<br>isso agora.</td>
+      <td>11</td>
+      <td>C11(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Promovendo integração entre funcionários não líderes de diferentes áreas</td>
+      <td>No quesito pessoal, acho que a esfera de funcionários não líderes (estagiários à analistas) da MMC e Suzano ainda se<br>conhecem muito mal, especialmente os de áreas paralelas (que não ficam no mesmo time). Entendo que é inviável fazer eventos<br>de integração com todos, mas eu acho que as lideranças poderiam promover encontros entre áreas para a turma se conhecer<br>melhor. Eu ainda tenho dificuldade de saber quem procurar quando preciso de alguma informação específica de MMC de algumas áreas.</td>
+      <td>12</td>
+      <td>C12(31.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na gestão de processos e expectativas em mudança rápida</td>
+      <td>Em termos de processos a maior dificuldade é atender as diferentes expectativas e a mudança rápida de direção. Alguns assuntos<br>importantes tem ficado muito 'de canto', como por exemplo PB. Tema extremamente relevante e não está bem calibrado no inicio.<br>acho que o assunto deveria ter começado a ser abordado antes. E continua não estando claro os prazos e papeis<br>e responsabilidades</td>
+      <td>12</td>
+      <td>C12(14.2%); C9(21.6%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Adaptação e exploração dos processos de ciclo S&OP</td>
+      <td>mudança nos processos de ciclo S&OP, ainda em adaptação, mas funcionando bem. Entrada na área com time espelho. Está sendo<br>positivo pela troca de experiências, mas ainda precisamos explorar e detalhar mais como ficará organizada a estrutura e os processos<br>no dia a dia. Inicialmente usamos o modelo Suzano e agora estamos explorando as oportunidades do melhor dos dois lados.<br>Acredito que o alto volume de agendas de sinergia e integração, bem como o fluxo de altas pessoas é um<br>fator que dificulta</td>
+      <td>12</td>
+      <td>C12(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Lideranças da Suzano fazem piadas e críticas sobre Kimberly-Clark</td>
+      <td>Houve situações em que lideranças da Suzano fizeram piadas e críticas generalizadas sobre como a equipe da Kimberly-Clark trabalhava</td>
+      <td>3</td>
+      <td>C3(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Diferenças culturais entre Suzano e Kimberly-Clark: imposição versus colaboração</td>
+      <td>A cultura da Suzano parece mais impositiva em relação a fornecedores e clientes, enquanto a Kimberly-Clark tinha uma abordagem mais<br>colaborativa. Internamente as relações são melhores.</td>
+      <td>3</td>
+      <td>C3(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Reunião de trabalho marcante com cobrança agressiva de cliente</td>
+      <td>Um dos casos que foram marcantes foi numa reunião de trabalho onde participaram toda a gerência de primeira e segunda<br>linha. Um cara de primeira linha chegou e disse "como é que a gente erra com esse cliente de novo,<br>vocês tem que ir lá visitar o cara, e pedir desculpas". Um cara da KC absorveu aquilo ali e provavelmente<br>pensou "eu preciso arrumar algumas coisas aqui internamente, isso soou de uma forma agressiva". Deve ter pensado que não poderia<br>se opor ao cara de primeira linha.</td>
+      <td>1</td>
+      <td>C1(41.1%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Medo de expressar opiniões e suas consequências no trabalho</td>
+      <td>O que eu percebo é que os caras da KC também têm medo de, tem sim, um certo medo ali<br>de colocar o seu posicionamento. No sentido de poder, falar o que pensa. Vai ter um desafio grande aí de<br>proporcionar segurança psicológica pro time, pra que o time consiga lidar de, cara, de colocar o seu ponto, de discutir,<br>e não simplesmente acatar qualquer decisão, ouvir, e seguir. O cara que fica muito quieto do outro lado, me parece<br>que em algum momento ele vai explodir. Explodir no sentido de tchau companhia.</td>
+      <td>1</td>
+      <td>C1(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Cobranças e pressões geram mal-estar e interpretações equivocadas nas reuniões</td>
+      <td>Que aí começou a virar uma cobrança geral, o cara de comercial cobrando supply, o cara de supply cobrando industrial,<br>e esse negócio começou a gerar centelhas. Então eu tive que tentar recuperar algumas pessoas que se sentiram mal, achando<br>que o posicionamento de algum diretor foi muito forte em determinada reunião. A gente tem muita transparência pra falar as<br>coisa nas reuniões. Essa transparência, às vezes, ela pode ser interpretada como agressividade. Então, assim, eu percebi que algumas pessoas<br>do meu time se sentiram pressionadas.</td>
+      <td>1</td>
+      <td>C1(43.7%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Burocracias e Tempo: Desafios na Fábrica de Mogi</td>
+      <td>A gente precisou fazer um carregamento diferente na fábrica de Mogi, é o tipo de coisa que talvez uma fábrica<br>da Suzano, rápido a gente fala, conecta, semana que vem tá rodando, eu senti que Mogi, a gente precisa passionar<br>um time da qualidade, passionar um time da segurança, e passar por um comitê, que mês que vem, e avaliar<br>pra daqui dois meses rodar, então assim, eu acho que existe umas burocracias que talvez só o tempo vai derrubar.</td>
+      <td>11</td>
+      <td>C11(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Desafios na gestão de processos durante a transição empresarial</td>
+      <td>Na parte de processos tem sido um pouco da gente ter que respirar, porque a gente teve essa parte agora<br>da empresa temporária, que é a MMC, então tem várias coisas que eu já queria estar dando mais velocidade, seja<br>de relatórios, de sinergia e etc, e a gente se pega até no dia a dia, sabe, esquecendo alguma coisa,<br>esquecendo de esperar que se tudo der certo, em novembro a gente acaba com essas duas empresas, então confesso que<br>isso atrapalha a parte de processo, tem muita coisa que fica chato, a gente gera uma informação de Suzano, as<br>coisas de MMC não estão dentro daquele relatório, um pouco de sempre estar tendo que lembrar para também introduzir todo<br>mundo junto, de não ficar só olhando Suzano.</td>
+      <td>11</td>
+      <td>C11(100.0%)</td>
+      <td>Supply</td>
+      <td>Entrevista</td>
+    </tr>
+    <tr>
+      <td>Dependência de informações externas causa estresse e atrasos no trabalho</td>
+      <td>a rotina mudou totalmente, pois dependemos muito de outras informações da KC, sistema, power pi. deixou o trabalho mais estressante,<br>pois não temos informações, ai temos que solicitar para pessoas que vieram da KC para pegar um simples relatorio de<br>faturamento. agora final do mês, onde acompanhamos o faturamento, temos que esperar alguém da KC para informar, eu como Suzano<br>não consigo acessar de hora em hora. isso atrasa o trabalho pois preciso me programar para saber quanto falta da<br>meta</td>
+      <td>10</td>
+      <td>C10(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios da integração de sistemas para análise de informações</td>
+      <td>O fato de estarmos trabalhando em dois sistemas atrapalha bastante, fica muito difícil analisar as informações de forma completa por<br>tudo depender de duas fontes e dois relatórios, mas acho que é algo natural até a integração completa. Eu preciso<br>enxergar no meu trabalho, o histórico completo de todas as regionais de vendas de vendas. Mas para fazer isso, eu<br>preciso montar arquivos que unem as bases dos dois sistemas, sendo que elas não necessariamente irão conversar muito bem -<br>isso acaba exigindo muito tempo de ajustes manuais para fazer uma análise, que, no sistema único, não exigiria tempo algum.</td>
+      <td>12</td>
+      <td>C12(19.6%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Impacto das mudanças nos processos: regras e procedimentos mais definidos</td>
+      <td>Impactou em mudanças nos processos. Gostaria que houvessem regras e procedimentos mais bem definidos, sem necessidade de discussões e reuniões.<br>Exemplo de mudança de processo: reuniões estratégicas mais voltada para liderança, sem envolvimento das equipes.</td>
+      <td>9</td>
+      <td>C9(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios enfrentados na gestão de projetos em empresas</td>
+      <td>Mudança na exposição, redução de atividades estratégicas, aumento de atividades operacionais, baixa visibilidade, prazos muito apertados.</td>
+      <td>5</td>
+      <td>C5(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Desafios na implementação de mudanças organizacionais: falta de padronização e liderança</td>
+      <td>Falta de padronização dos processos, falta de envolvimento da liderança nas mudanças recentes</td>
+      <td>5</td>
+      <td>C5(33.8%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+    <tr>
+      <td>Problemas na gestão de carreira e promoções na empresa</td>
+      <td>Ausência de plano de carreira, falta de critérios para promoções</td>
+      <td>5</td>
+      <td>C5(100.0%)</td>
+      <td>Supply</td>
+      <td>Chat</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
