@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovana - Assistente Virtual TT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ed6337;
+            --background-color: #f2efeb;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-color);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        .logo-container {
+            width: 180px;
+            height: 180px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .hexagon {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @keyframes glow {
+            0% { filter: brightness(1) drop-shadow(0 0 5px rgba(237, 99, 55, 0)); }
+            50% { filter: brightness(1.2) drop-shadow(0 0 10px rgba(237, 99, 55, 0.6)); }
+            100% { filter: brightness(1) drop-shadow(0 0 5px rgba(237, 99, 55, 0)); }
+        }
+
+        .speaking .hexagon {
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-family: 'Anton', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 1.75rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        p {
+            color: #4b5563;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+
+        .status {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                width: 140px;
+                height: 140px;
+                margin: 1.5rem auto;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.75rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+                padding: 0 0.5rem;
+            }
+
+            .status {
+                font-size: 0.9rem;
+                margin-top: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container" id="logoContainer">
+            <img src="https://rodbastos.github.io/logo-icone-tt.svg" class="hexagon" alt="Logo Target Teal"/>
+        </div>
+        <h1>Olá, eu sou a Giovana</h1>
+        <p>Assistente virtual da Target Teal especializada em entrevistar profissionais da TechFunction. Estou aqui para te ouvir!</p>
+        <div class="status" id="status">Clique no botão para começar e autorize o acesso ao microfone</div>
+    </div>
+
+    <script>
+        var vapiInstance = null;
+        const assistant = "0f560659-74e2-4d27-987a-b2592891676b";
+        const apiKey = "556cb501-837c-451e-afa2-2238206ac2b5";
+        
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.src = "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            
+            g.onload = function() {
+                vapiInstance = window.vapiSDK.run({
+                    apiKey: apiKey,
+                    assistant: assistant
+                });
+
+                // Sincronização com o logo e mensagens detalhadas
+                vapiInstance.on('call-start', function() {
+                    document.getElementById('logoContainer').classList.add('active');
+                    document.getElementById('status').textContent = 'Iniciando conversa com a Giovana...';
+                });
+
+                vapiInstance.on('speech-start', function() {
+                    document.getElementById('logoContainer').classList.add('speaking');
+                    document.getElementById('status').textContent = 'Giovana está falando...';
+                });
+
+                vapiInstance.on('speech-end', function() {
+                    document.getElementById('logoContainer').classList.remove('speaking');
+                    document.getElementById('status').textContent = 'Giovana está ouvindo...';
+                });
+
+                vapiInstance.on('call-end', function() {
+                    document.getElementById('logoContainer').classList.remove('active', 'speaking');
+                    document.getElementById('status').textContent = 'Conversa finalizada. Clique para iniciar nova chamada.';
+                });
+
+                vapiInstance.on('error', function(error) {
+                    document.getElementById('logoContainer').classList.remove('active', 'speaking');
+                    document.getElementById('status').textContent = 'Ops! Tivemos um problema. Tente novamente.';
+                });
+
+                vapiInstance.on('volume-level', function(volume) {
+                    // Ajusta a intensidade do brilho baseado no volume
+                    const intensity = Math.min(volume * 1.5, 1);  // limita a intensidade máxima
+                    document.querySelector('.hexagon').style.filter = 
+                        `brightness(${1 + intensity * 0.2}) drop-shadow(0 0 ${intensity * 10}px rgba(237, 99, 55, 0.6))`;
+                });
+            };
+        })(document, "script");
+    </script>
+</body>
+</html>
